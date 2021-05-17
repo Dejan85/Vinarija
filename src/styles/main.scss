@@ -1,0 +1,20 @@
+// mixins
+@import "src/styles/mixins/respond.scss";
+@import "src/styles/mixins/gradient.scss";
+@import "src/styles/mixins/tab.scss";
+
+// variables
+@import "src/styles/variables/colors.scss";
+@import "src/styles/variables/fonts.scss";
+
+// base
+@import "src/styles/base.scss";
+
+/**********************************UI****************************************/
+
+/**********************************WIDGETS****************************************/
+
+// scheduler
+@import "src/widgets/scheduler/styles.scss";
+
+/**********************************FRONTEND****************************************/
