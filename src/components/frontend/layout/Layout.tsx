@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 
-const Layout = ({ children, title = "Vinarija" }): JSX.Element => {
+const Layout = ({ children, title = "Rnjak Vinarija" }): JSX.Element => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
