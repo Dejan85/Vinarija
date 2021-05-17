@@ -4,6 +4,7 @@ const Footer = ():JSX.Element => {
     return (
         <div>
             Footer
+            jedan dva tri
         </div>
     )
 }
