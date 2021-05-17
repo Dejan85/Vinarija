@@ -1,12 +1,16 @@
 import React from "react";
-import { Button } from "src/components/ui";
+import { SubContainer } from "src/components/ui";
+import Nav from "src/components/frontend/header/nav";
+import Logo from "src/components/frontend/header/logo";
+import Shop from "src/components/frontend/header/shop";
 
 const Header = (): JSX.Element => {
   return (
-    <div>
-      Logo
-      <nav>nav</nav>
-    </div>
+    <SubContainer className="header" as="header">
+      <Nav />
+      <Logo />
+      <Shop />
+    </SubContainer>
   );
 };
 

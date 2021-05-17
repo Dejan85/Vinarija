@@ -9,11 +9,14 @@
 @import "src/styles/base.scss";
 
 /**********************************UI****************************************/
-@import "src/components/ui/button/styles.scss";
+@import "src/components/ui/button";
+@import "src/components/ui/sub-container";
 
 /**********************************WIDGETS****************************************/
 
-// scheduler
-@import "src/widgets/scheduler/styles.scss";
-
 /**********************************FRONTEND****************************************/
+@import "src/components/frontend/layout";
+@import "src/components/frontend/header";
+@import "src/components/frontend/header/nav";
+@import "src/components/frontend/header/shop";
+@import "src/components/frontend/header/logo";

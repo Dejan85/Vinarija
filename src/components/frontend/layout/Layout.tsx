@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import { Header, Footer } from 'src/components/frontend';
+import { Header, Footer } from "src/components/frontend";
 
 const Layout = ({ children, title = "Rnjak Vinarija" }): JSX.Element => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <main>
+    <main className="layout">
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
