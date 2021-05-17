@@ -27,50 +27,10 @@ html {
   @include respond(600) {
     font-size: 30%; // 1 rem = 3 / 16 * 100 = 30%
   }
-
-  // display: flex;
-  // margin: 0 auto;
 }
 
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-/**
- * ----------------------------------------
- * animation slide-out-fwd-center
- * ----------------------------------------
- */
-@-webkit-keyframes slide-out-fwd-center {
-  0% {
-    -webkit-transform: translateZ(1);
-    transform: translateZ(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateZ(600px);
-    transform: translateZ(600px);
-    opacity: 0;
-  }
-}
-@keyframes slide-out-fwd-center {
-  0% {
-    -webkit-transform: translateZ(1);
-    transform: translateZ(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateZ(600px);
-    transform: translateZ(600px);
-    opacity: 0;
-  }
-}
-
-.animate {
-  -webkit-animation: slide-out-fwd-center 0.7s
-    cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
-  animation: slide-out-fwd-center 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-    reverse both;
 }
