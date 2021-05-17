@@ -9,11 +9,9 @@
 @import "src/styles/base.scss";
 
 /**********************************UI****************************************/
-@import "src/components/ui/button/styles.scss";
+@import "src/components/ui/button";
+@import "src/components/ui/sub-container";
 
 /**********************************WIDGETS****************************************/
-
-// scheduler
-@import "src/widgets/scheduler/styles.scss";
 
 /**********************************FRONTEND****************************************/

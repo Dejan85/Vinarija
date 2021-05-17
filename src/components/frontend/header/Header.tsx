@@ -1,12 +1,11 @@
 import React from "react";
-import { Button } from "src/components/ui";
+import { Button, SubContainer } from "src/components/ui";
 
 const Header = (): JSX.Element => {
   return (
-    <div>
-      Logo
-      <nav>nav</nav>
-    </div>
+    <SubContainer>
+      <header>nav logo korpa</header>
+    </SubContainer>
   );
 };
 
