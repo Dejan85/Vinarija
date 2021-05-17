@@ -7,7 +7,7 @@ const Layout = ({ children, title = "Rnjak Vinarija" }): JSX.Element => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <main className="container">
+    <main className="layout">
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />

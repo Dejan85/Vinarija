@@ -3,7 +3,7 @@ import { Button, SubContainer } from "src/components/ui";
 
 const Header = (): JSX.Element => {
   return (
-    <SubContainer>
+    <SubContainer className="header">
       <header>nav logo korpa</header>
     </SubContainer>
   );
