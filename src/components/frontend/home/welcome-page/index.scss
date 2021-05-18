@@ -5,7 +5,7 @@
   justify-content: center;
   height: 70rem;
   font-family: $lato;
-  background: #0005;
+  background: #0006;
 
   &__background-image {
     z-index: -1;
@@ -13,23 +13,34 @@
   }
 
   &__heading {
-    color: white;
+    color: #fff;
     text-shadow: 1px 1px 1px #000;
     font-size: 10rem;
+    font-weight: 600;
+    font-family: $poppins;
     z-index: 1;
   }
 
   &__link {
     z-index: 1;
-    color: white;
+    color: #fff;
+    background-color: transparent;
     font-size: 2rem;
     text-shadow: 1px 1px 1px #000;
     text-transform: uppercase;
-    border: 2px solid white;
+    border: 2px solid #fff;
     padding: 1rem 2rem;
     position: relative;
-    top: 10rem;
+    top: 11rem;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
+    transition: all .25s ease-in;
+
+    &:hover {
+      background-color: #fff;
+      color: $main-color;
+      text-shadow: none;
+      padding: 1rem 3rem;
+    }
   }
 }
