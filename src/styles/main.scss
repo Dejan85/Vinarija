@@ -15,9 +15,15 @@
 /**********************************WIDGETS****************************************/
 
 /**********************************FRONTEND****************************************/
+
+// layout
 @import "src/components/frontend/layout";
+
+//header
 @import "src/components/frontend/header";
 @import "src/components/frontend/header/nav";
 @import "src/components/frontend/header/shop";
 @import "src/components/frontend/header/logo";
+
+// welcome-page
 @import "src/components/frontend/home/welcome-page";
