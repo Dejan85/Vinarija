@@ -1,7 +1,12 @@
 import React from "react";
+import { WelcomePage } from "src/components/frontend";
 
 const Index = (): JSX.Element => {
-  return <div>home page</div>;
+  return (
+    <>
+      <WelcomePage />
+    </>
+  );
 };
 
 export default Index;
