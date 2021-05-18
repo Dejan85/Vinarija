@@ -2,7 +2,7 @@ import React from "react";
 import { SubContainerPropsTypes } from "./types";
 
 const SubContainer = (props: SubContainerPropsTypes): JSX.Element => {
-  const { children, className: customClassName, as } = props;
+  const { children, className: customClassName, as="div" } = props;
 
   const Wrapper = as;
 

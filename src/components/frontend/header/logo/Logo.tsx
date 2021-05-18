@@ -8,7 +8,7 @@ const Logo = (): JSX.Element => {
       <Image
         src="/images/logo/logo.png"
         alt="logo"
-        width="200px"
+        width="150px"
         height="60px"
         objectFit="contain"
         className="logo"

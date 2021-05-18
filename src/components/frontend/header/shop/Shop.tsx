@@ -8,8 +8,8 @@ const Shop = (): JSX.Element => {
       <Image
         src="/icons/shop/shop.svg"
         alt="img"
-        width="50px"
-        height="50px"
+        width="35px"
+        height="35px"
         className="shop"
       />
     </Link>
