@@ -1,3 +1,11 @@
 .home-about {
+  flex-direction: column;
+  align-items: center;
   outline: 1px solid red;
+
+  &__heading {
+    font-size: 5rem;
+    font-family: $lato;
+    font-weight: 800;
+  }
 }

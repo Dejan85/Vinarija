@@ -1,10 +1,11 @@
 import React from "react";
-import { WelcomePage } from "src/components/frontend";
+import { WelcomePage, HomeAbout } from "src/components/frontend";
 
 const Index = (): JSX.Element => {
   return (
     <>
       <WelcomePage />
+      <HomeAbout />
     </>
   );
 };
