@@ -26,6 +26,12 @@ const Layout = ({
           sizes="32x32"
           href="/icons/favicons/favicon.png"
         />
+        <meta name="description" content="Vinarija Rnjak" />
+        <meta name="author" content="Dejan Markovic, Vanja Dulikravic" />
+        <meta
+          name="keywords"
+          content="vino, vina, vinograd, vinogradi, rose, chardonnay, sauvignon blanc, pinot noir, cabernet sauvignon, merlot"
+        />
       </Head>
       <Header />
       {children}
