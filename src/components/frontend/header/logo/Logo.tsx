@@ -5,14 +5,16 @@ import Link from "next/link";
 const Logo = (): JSX.Element => {
   return (
     <Link href="/">
-      <Image
-        src="/images/logo/logo.png"
-        alt="logo"
-        width="150px"
-        height="60px"
-        objectFit="contain"
-        className="logo"
-      />
+      <a>
+        <Image
+          src="/images/logo/logo.png"
+          alt="logo"
+          width="150px"
+          height="60px"
+          objectFit="contain"
+          className="logo"
+        />
+      </a>
     </Link>
   );
 };
