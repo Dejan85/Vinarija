@@ -2,7 +2,7 @@ import React from "react";
 import { SubContainer, Button } from "src/components/ui";
 import Image from "next/image";
 
-const WelcomePage = () => {
+const WelcomePage = (): JSX.Element => {
   return (
     <SubContainer className="welcome-page" as="section">
       <Image
