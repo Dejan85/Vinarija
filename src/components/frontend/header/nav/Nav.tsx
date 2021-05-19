@@ -13,6 +13,11 @@ const Nav = (): JSX.Element => {
       "--navigation-width",
       `${toggleNav ? "100%" : "0%"}`
     );
+
+    document.documentElement.style.setProperty(
+      "--global-overflow",
+      `${toggleNav ? "hidden" : "auto"}`
+    );
   }, [toggleNav]);
 
   return (
