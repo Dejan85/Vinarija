@@ -1,5 +1,10 @@
 import React from "react";
-import { WelcomePage, HomeAbout, HomeProducts } from "src/components/frontend";
+import {
+  WelcomePage,
+  HomeAbout,
+  HomeProducts,
+  HomeGallery,
+} from "src/components/frontend";
 
 const Index = (): JSX.Element => {
   return (
@@ -7,6 +12,7 @@ const Index = (): JSX.Element => {
       <WelcomePage />
       <HomeAbout />
       <HomeProducts />
+      <HomeGallery />
     </>
   );
 };
