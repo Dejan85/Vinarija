@@ -4,6 +4,7 @@
 // variables
 @import "src/styles/variables/colors.scss";
 @import "src/styles/variables/fonts.scss";
+@import "src/styles/variables/css-variables.scss";
 
 // base
 @import "src/styles/base.scss";
@@ -24,6 +25,9 @@
 @import "src/components/frontend/header/nav";
 @import "src/components/frontend/header/shop";
 @import "src/components/frontend/header/logo";
+
+// navigation
+@import "src/components/frontend/navigation";
 
 // welcome-page
 @import "src/components/frontend/home/welcome-page";
