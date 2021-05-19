@@ -1,0 +1,9 @@
+.navigation {
+  position: absolute;
+  width: var(--navigation-width);
+  height: 100vh;
+  left: 0;
+  background-color: red;
+  transition: 1s;
+  z-index: 5;
+}
