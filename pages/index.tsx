@@ -13,7 +13,7 @@ const Index = (): JSX.Element => {
       <Navigation />
       <WelcomePage />
       <HomeAbout />
-      {/* <HomeProducts /> */}
+      <HomeProducts />
       <HomeGallery />
     </>
   );
