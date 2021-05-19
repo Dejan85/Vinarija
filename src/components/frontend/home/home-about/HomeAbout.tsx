@@ -11,7 +11,6 @@ const HomeAbout = () => {
         enim accusantium nostrum molestias voluptate blanditiis nobis. Qui,
         perspiciatis sit.
       </p>
-
       <p className="home-about__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at nulla
         tempora ipsum voluptatibus magnam aut veniam, eos adipisci veritatis
