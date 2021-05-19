@@ -1,0 +1,57 @@
+.carousel {
+  width: 100%;
+  //   outline: 1px solid blue;
+
+  &__container {
+    // outline: 1px solid red;
+  }
+
+  &__item {
+    height: 40rem;
+    // outline: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      //   position: relative;
+      //   width: 100%;
+    }
+  }
+
+  &__image {
+    // padding: 2rem;
+  }
+
+  &__slider {
+    // padding: 0 2rem;
+    background-color: lighten($color: #979393, $amount: 35%);
+  }
+
+  &__image {
+  }
+}
+
+// ovo je container od ul-a
+.react-multi-carousel-list {
+}
+
+// ovo je ul
+.react-multi-carousel-track {
+}
+
+// ovo je li
+.react-multi-carousel-item {
+}
+
+.react-multiple-carousel__arrow {
+}
+
+.react-multiple-carousel__arrow--left {
+}
+.react-multiple-carousel__arrow--right {
+}
+
+.react-multi-carousel-item--active {
+  //   background-color: red;
+}
