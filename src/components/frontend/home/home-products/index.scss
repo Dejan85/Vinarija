@@ -58,9 +58,11 @@
   }
 
   &__heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: $poppins;
     font-weight: 400;
     text-align: center;
+    max-width: 20rem;
+    width: 100%;
   }
 }
