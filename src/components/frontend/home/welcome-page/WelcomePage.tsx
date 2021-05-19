@@ -11,8 +11,12 @@ const WelcomePage = (): JSX.Element => {
         layout="fill"
         objectFit="cover"
       />
-      <h1 className="welcome-page__heading">Rnjak Vinarija</h1>
-      <a className="welcome-page__link">Pogledajte ponudu</a>
+      <h1 className="welcome-page__heading">Vinarija Rnjak</h1>
+      <button className="welcome-page__button">
+        Pogledajte Ponudu
+        <div className="welcome-page__button__horizontal"></div>
+        <div className="welcome-page__button__vertical"></div>
+      </button>
     </SubContainer>
   );
 };
