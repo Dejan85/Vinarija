@@ -2,7 +2,7 @@ import React from "react";
 import { SubContainer, Button } from "src/components/ui";
 import Image from "next/image";
 
-const WelcomePage = () => {
+const WelcomePage = (): JSX.Element => {
   return (
     <SubContainer className="welcome-page" as="section">
       <Image
@@ -11,8 +11,12 @@ const WelcomePage = () => {
         layout="fill"
         objectFit="cover"
       />
-      <h1 className="welcome-page__heading">Rnjak Vinarija</h1>
-      <a className="welcome-page__link">Pogledajte ponudu</a>
+      <h1 className="welcome-page__heading">Vinarija Rnjak</h1>
+      <button className="welcome-page__button">
+        Pogledajte Ponudu
+        <div className="welcome-page__button__horizontal"></div>
+        <div className="welcome-page__button__vertical"></div>
+      </button>
     </SubContainer>
   );
 };
