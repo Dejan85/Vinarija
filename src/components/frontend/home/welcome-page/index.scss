@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70rem;
+  height: 80rem;
   font-family: $lato;
-  background: #0005;
+  background: #0006;
 
   &__background-image {
     z-index: -1;
@@ -13,23 +13,91 @@
   }
 
   &__heading {
-    color: white;
+    color: #fff;
     text-shadow: 1px 1px 1px #000;
-    font-size: 10rem;
+    font-size: 12rem;
+    font-weight: 600;
+    font-family: $poppins;
     z-index: 1;
   }
 
-  &__link {
-    z-index: 1;
-    color: white;
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px #000;
-    text-transform: uppercase;
-    border: 2px solid white;
-    padding: 1rem 2rem;
+  &__button {
+	
+    --offset: 10px;
+    --border-size: 2px;
+    
+    display: block;
     position: relative;
-    top: 10rem;
+    top: 7rem;
+    padding: 2rem 4rem;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+    font-family: $lato;
+    text-transform: uppercase;
+    outline: none;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    transition: background .3s ease;
+    
+    &:hover {
+      background: rgba(100, 0, 0, .03);
+    }
+    
+    &__horizontal,
+    &__vertical {
+      position: absolute;
+      top: var(--horizontal-offset, 0);
+      right: var(--vertical-offset, 0);
+      bottom: var(--horizontal-offset, 0);
+      left: var(--vertical-offset, 0);
+      transition: transform .5s ease-out;
+      will-change: transform;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        border: inherit;
+      }
+    }
+    
+    &__horizontal {
+      --vertical-offset: calc(var(--offset) * -1);
+      border-top: var(--border-size) solid currentcolor;
+      border-bottom: var(--border-size) solid currentcolor;
+      
+      &::before {
+        top: calc(var(--vertical-offset) - var(--border-size));
+        bottom: calc(var(--vertical-offset) - var(--border-size));
+        left: calc(var(--vertical-offset) * -1);
+        right: calc(var(--vertical-offset) * -1);
+      }
+    }
+    
+    &:hover &__horizontal {
+      transform: scaleX(0);
+    }
+    
+    &__vertical {
+      --horizontal-offset: calc(var(--offset) * -1);
+      border-left: var(--border-size) solid currentcolor;
+      border-right: var(--border-size) solid currentcolor;
+      
+      &::before {
+        top: calc(var(--horizontal-offset) * -1);
+        bottom: calc(var(--horizontal-offset) * -1);
+        left: calc(var(--horizontal-offset) - var(--border-size));
+        right: calc(var(--horizontal-offset) - var(--border-size));
+      }
+    }
+    
+    &:hover &__vertical {
+      transform: scaleY(0);
+    }
+    
   }
 }

@@ -1,11 +1,27 @@
 .home-about {
   flex-direction: column;
   align-items: center;
-  outline: 1px solid red;
+  padding-top: 10rem;
 
   &__heading {
-    font-size: 5rem;
-    font-family: $lato;
+    font-size: 7rem;
+    font-family: $poppins;
     font-weight: 800;
+  }
+
+  &__text {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 50%;
+    margin: 2rem 0;
+    font-family: $lato;
+  }
+
+  &__text:nth-child(2) {
+    font-weight: 600;
+  }
+
+  &__text:nth-child(3) {
+    font-weight: 400;
   }
 }
