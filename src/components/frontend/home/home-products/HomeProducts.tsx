@@ -9,22 +9,22 @@ const Products = (): JSX.Element => {
       <SubContainer className="products" as="section">
         <Product
           heading="Chardonnay"
-          image="/images/home/products/wine-1.png"
+          image="/images/home/products/wine-11.png"
         />
         <Product
           heading="Sauvignon Blanc"
-          image="/images/home/products/wine-2.png"
+          image="/images/home/products/wine-12.png"
         />
         <Product
           heading="Cabernet Sauvignon"
-          image="/images/home/products/wine-3.png"
+          image="/images/home/products/wine-13.png"
         />
-        <Product heading="Merlot" image="/images/home/products/wine-4.png" />
+        <Product heading="Merlot" image="/images/home/products/wine-14.png" />
         <Product
           heading="Pinot Noir"
-          image="/images/home/products/wine-5.png"
+          image="/images/home/products/wine-15.png"
         />
-        <Product heading="Rose" image="/images/home/products/wine-6.png" />
+        <Product heading="Rose" image="/images/home/products/wine-16.png" />
       </SubContainer>
       <Link href="/">
         <a className="products__link">Pogledajte više</a>
