@@ -6,7 +6,7 @@ const WelcomePage = (): JSX.Element => {
   return (
     <SubContainer className="welcome-page" as="section">
       <Image
-        src="/images/home/welcome-page/background.jpg"
+        src="/images/home/welcome-page/background.webp"
         className="welcome-page__background-image"
         layout="fill"
         objectFit="cover"

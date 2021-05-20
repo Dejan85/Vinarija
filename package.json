@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Dejan85/Vinarija#readme",
   "dependencies": {
+    "gsap": "^3.6.1",
     "hamburger-react": "^2.4.1",
     "next": "^10.2.0",
     "react": "^17.0.2",

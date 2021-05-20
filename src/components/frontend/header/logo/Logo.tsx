@@ -13,6 +13,7 @@ const Logo = (): JSX.Element => {
           height="60px"
           objectFit="contain"
           className="logo"
+          draggable="false"
         />
       </a>
     </Link>
