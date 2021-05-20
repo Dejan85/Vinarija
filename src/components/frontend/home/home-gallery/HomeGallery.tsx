@@ -7,10 +7,6 @@ const HomeGallery = (): JSX.Element => {
       <h1 className="home-gallery__heading">Nasi vinogradi</h1>
 
       <CarouselUi />
-
-      {/* <h3 className="home-gallery__sub-heading">Podelite vase</h3>
-      <h3 className="home-gallery__sub-heading">momente sa nama</h3>
-      <span className="home-gallery__span">@RNJAKVINARIJA</span> */}
     </SubContainer>
   );
 };
