@@ -5,6 +5,7 @@ import {
   HomeProducts,
   HomeGallery,
   Navigation,
+  HomeMoments,
 } from "src/components/frontend";
 
 const Index = (): JSX.Element => {
@@ -15,6 +16,7 @@ const Index = (): JSX.Element => {
       <HomeAbout />
       <HomeProducts />
       <HomeGallery />
+      <HomeMoments />
     </>
   );
 };

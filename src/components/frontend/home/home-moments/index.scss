@@ -1,0 +1,12 @@
+.home-moments {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+
+  &__heading {
+    font-size: $poppins;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+}
