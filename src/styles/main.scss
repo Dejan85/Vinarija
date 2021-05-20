@@ -9,9 +9,12 @@
 // base
 @import "src/styles/base.scss";
 
+@import "react-multi-carousel/lib/styles.css";
+
 /**********************************UI****************************************/
 @import "src/components/ui/button";
 @import "src/components/ui/sub-container";
+@import "src/components/ui/carousel";
 
 /**********************************WIDGETS****************************************/
 
