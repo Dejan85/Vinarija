@@ -1,7 +1,7 @@
 import React from "react";
 import { SubContainer, Heading, Paragraph } from "src/components/ui";
 
-const HomeAbout = () => {
+const HomeAbout = (): JSX.Element => {
   return (
     <SubContainer as="section" className="home-about">
       <Heading as="h2">O nama</Heading>
