@@ -4,7 +4,6 @@ import {
   HomeAbout,
   HomeProducts,
   HomeGallery,
-  Navigation,
   HomeMoments,
 } from "src/components/frontend";
 

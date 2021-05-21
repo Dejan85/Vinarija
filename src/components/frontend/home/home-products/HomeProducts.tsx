@@ -1,6 +1,7 @@
 import React from "react";
 import { SubContainer, Link, Product } from "src/components/ui";
-const Products = (): JSX.Element => {
+
+const HomeProducts = (): JSX.Element => {
   return (
     <>
       <SubContainer className="products" as="section">
@@ -30,4 +31,4 @@ const Products = (): JSX.Element => {
   );
 };
 
-export default Products;
+export default HomeProducts;
