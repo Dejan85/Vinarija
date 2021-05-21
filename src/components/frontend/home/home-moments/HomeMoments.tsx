@@ -49,34 +49,6 @@ const HomeMoments = (): JSX.Element => {
             height="1000"
           />
         </figure>
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1573480813647-552e9b7b5394?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600$h=600&amp;q=50"
-            width="1000"
-            height="1000"
-          />
-        </figure>
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=600$h=600&amp;q=50"
-            width="1000"
-            height="1000"
-          />
-        </figure>
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1544568104-5b7eb8189dd4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=600&amp;q=50"
-            width="1000"
-            height="1000"
-          />
-        </figure>
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1555424221-250de2a343ad?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=600&amp;q=50"
-            width="1000"
-            height="1000"
-          />
-        </figure>
       </Element>
     </SubContainer>
   );
