@@ -1,19 +1,16 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Image, Link } from "src/components/ui";
 
 const Shop = (): JSX.Element => {
   return (
     <Link href="/shop">
-      <a>
-        <Image
-          src="/icons/shop/shop.svg"
-          alt="img"
-          width="35px"
-          height="35px"
-          className="shop"
-        />
-      </a>
+      <Image
+        src="/icons/shop/shop.svg"
+        alt="img"
+        width="35px"
+        height="35px"
+        className="shop"
+      />
     </Link>
   );
 };

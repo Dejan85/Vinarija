@@ -1,22 +1,18 @@
 import React from "react";
-import { SubContainer, Button } from "src/components/ui";
-import Image from "next/image";
+import { SubContainer, Button, Heading, Image } from "src/components/ui";
 
 const WelcomePage = (): JSX.Element => {
   return (
     <SubContainer className="welcome-page" as="section">
       <Image
         src="/images/home/welcome-page/background.webp"
+        alt="image"
         className="welcome-page__background-image"
         layout="fill"
         objectFit="cover"
       />
-      <h1 className="welcome-page__heading">Vinarija Rnjak</h1>
-      <button className="welcome-page__button">
-        Pogledajte Ponudu
-        <div className="welcome-page__button__horizontal"></div>
-        <div className="welcome-page__button__vertical"></div>
-      </button>
+      <Heading as="h1">Vinarija Rnjak</Heading>
+      <Button as="button">Pogledajte Ponudu</Button>
     </SubContainer>
   );
 };

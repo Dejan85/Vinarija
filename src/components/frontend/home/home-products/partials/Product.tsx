@@ -1,10 +1,11 @@
 import React from "react";
-import Image from "next/image";
+import { Image, Paragraph, Element } from "src/components/ui";
+import { HomeProductProps } from "../types";
 
-const Product = (props): JSX.Element => {
+const Product = (props: HomeProductProps): JSX.Element => {
   const { image, heading } = props;
   return (
-    <div className="product">
+    <Element as="div" className="product">
       {image && (
         <Image
           className="product__image"
@@ -15,8 +16,10 @@ const Product = (props): JSX.Element => {
           objectFit="cover"
         />
       )}
-      <h3 className="product__heading">{heading}</h3>
-    </div>
+      <Paragraph as="p" className="product__heading">
+        {heading}
+      </Paragraph>
+    </Element>
   );
 };
 

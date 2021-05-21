@@ -1,11 +1,10 @@
 import React from "react";
-import { SubContainer, CarouselUi } from "src/components/ui";
+import { SubContainer, CarouselUi, Heading } from "src/components/ui";
 
 const HomeGallery = (): JSX.Element => {
   return (
     <SubContainer className="home-gallery" as="section">
-      <h1 className="home-gallery__heading">Nasi vinogradi</h1>
-
+      <Heading as="h2">Nasi vinogradi</Heading>
       <CarouselUi />
     </SubContainer>
   );
