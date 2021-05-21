@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .home-moments {
   flex-direction: column;
   align-items: center;
@@ -18,7 +20,7 @@
     font-size: 4rem;
     text-decoration: none;
     font-weight: 600;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
 
     &:hover {
       color: $main-color;
@@ -34,22 +36,22 @@
       justify-content: center;
       width: 100%;
       height: 100vh;
-    
-      $photos:7;
-    
+
+      $photos: 7;
+
       @for $i from 1 through $photos {
         &:nth-child(#{$i}) {
           img {
-            $rotation: (($i - 1)/ ($photos - 1)) - 0.5;
+            $rotation: (math.div($i - 1, $photos - 1)) - 0.5;
             transform: scale(0.6) rotate($rotation * 30deg);
           }
         }
       }
-    
+
       img {
         width: 110vmin;
         height: 110vmin;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
       }
     }
   }

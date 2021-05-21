@@ -10,6 +10,8 @@ const Nav = (): JSX.Element => {
     setToggleNav(!toggleNav);
   };
 
+  console.log("test", hamburgerColor);
+
   return (
     <Element as="nav" className="nav">
       <Hamburger color={hamburgerColor} onToggle={toggleHandler} />
