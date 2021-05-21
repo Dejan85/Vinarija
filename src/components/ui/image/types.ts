@@ -8,4 +8,5 @@ export interface ImageProps {
   className?: string;
   objectFit?: "fill" | "contain" | "cover" | "none" | "scale-down";
   objectPosition?: string;
+  draggable?: boolean;
 }

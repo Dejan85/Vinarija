@@ -1,5 +1,5 @@
 import React from "react";
-import { SubContainer, LinkUi } from "src/components/ui";
+import { SubContainer, Link } from "src/components/ui";
 import Product from "src/components/frontend/home/home-products/partials/Product";
 const Products = (): JSX.Element => {
   return (
@@ -24,9 +24,9 @@ const Products = (): JSX.Element => {
         />
         <Product heading="Rose" image="/images/home/products/wine-16.png" />
       </SubContainer>
-      <LinkUi href="/" className="products__link">
+      <Link href="/" className="products__link">
         Pogledajte više
-      </LinkUi>
+      </Link>
     </>
   );
 };

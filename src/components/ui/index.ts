@@ -4,5 +4,5 @@ export { CarouselUi } from "./carousel";
 export { Heading } from "./heading";
 export { Element } from "./element";
 export { Paragraph } from "./paragraph";
-export { LinkUi } from "./link";
+export { Link } from "./link";
 export { Image } from "./image";

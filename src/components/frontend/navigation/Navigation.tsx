@@ -1,10 +1,10 @@
 import React from "react";
-import Image from "next/image";
+import { Image, Element } from "src/components/ui";
 
 const Navigation = (): JSX.Element => {
   return (
-    <div className="navigation">
-      <div className="navigation__col">
+    <Element as="div" className="navigation">
+      <Element as="div" className="navigation__col">
         <Image
           className="navigation__col__nav-logo"
           src="/images/logo/logo_2.png"
@@ -12,7 +12,6 @@ const Navigation = (): JSX.Element => {
           width="200px"
           height=""
           objectFit="contain"
-          draggable="false"
         />
         <a className="navigation__col__nav-links" href="#">
           Naslovna
@@ -29,27 +28,29 @@ const Navigation = (): JSX.Element => {
         <a className="navigation__col__nav-links" href="#">
           Kontakt
         </a>
-        <div className="navigation__col__socials">
+        <Element as="div" className="navigation__col__socials">
           <p>Konektujmo se</p>
-          <div className="navigation__col__socials__icons">
+          <Element as="div" className="navigation__col__socials__icons">
             <a href="#">
               <img src="/icons/socials/facebook.svg" alt="facebook" />
             </a>
             <a href="#">
               <img src="/icons/socials/instagram.svg" alt="instagram" />
             </a>
-          </div>
-        </div>
-      </div>
-      <div className="navigation__col">
-        <img
+          </Element>
+        </Element>
+      </Element>
+      <Element as="div" className="navigation__col">
+        <Image
           className="navigation__col__nav-images"
-          src="images/home/welcome-page/background.webp"
+          src="/images/home/welcome-page/background.webp"
           alt="image"
-          draggable="false"
+          width="800"
+          height="600"
+          objectFit="contain"
         />
-      </div>
-    </div>
+      </Element>
+    </Element>
   );
 };
 

@@ -13,6 +13,7 @@ const ImageUi = (props: ImageProps) => {
     objectFit,
     objectPosition,
     className: customClassName,
+    draggable,
   } = props;
   return (
     <Image
@@ -25,6 +26,7 @@ const ImageUi = (props: ImageProps) => {
       objectFit={objectFit}
       className={customClassName}
       objectPosition={objectPosition}
+      draggable={draggable}
     />
   );
 };

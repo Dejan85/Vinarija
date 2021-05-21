@@ -1,3 +1,3 @@
-import LinkUi from "./LinkUi";
+import Link from "./Link";
 
-export { LinkUi };
+export { Link };

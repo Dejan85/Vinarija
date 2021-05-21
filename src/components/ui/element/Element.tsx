@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { ElementProps } from "./types";
 
 const Element = (props: ElementProps): JSX.Element => {
@@ -6,4 +6,4 @@ const Element = (props: ElementProps): JSX.Element => {
   return <Wrapper className={className}>{children}</Wrapper>;
 };
 
-export default Element;
+export default memo(Element);
