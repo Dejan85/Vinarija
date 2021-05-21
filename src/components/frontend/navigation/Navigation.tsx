@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Element } from "src/components/ui";
+import { Image, Element, Link } from "src/components/ui";
 
 const Navigation = (): JSX.Element => {
   return (
@@ -13,21 +13,25 @@ const Navigation = (): JSX.Element => {
           height=""
           objectFit="contain"
         />
-        <a className="navigation__col__nav-links" href="#">
+        <Link href="/test" className="navigation__col__nav-links">
           Naslovna
-        </a>
-        <a className="navigation__col__nav-links" href="#">
+        </Link>
+
+        <Link href="/" className="navigation__col__nav-links">
           Vina
-        </a>
-        <a className="navigation__col__nav-links" href="#">
+        </Link>
+
+        <Link href="/" className="navigation__col__nav-links">
           Vinogradi
-        </a>
-        <a className="navigation__col__nav-links" href="#">
+        </Link>
+
+        <Link href="/" className="navigation__col__nav-links">
           Prodavnica
-        </a>
-        <a className="navigation__col__nav-links" href="#">
+        </Link>
+
+        <Link href="/" className="navigation__col__nav-links">
           Kontakt
-        </a>
+        </Link>
         <Element as="div" className="navigation__col__socials">
           <p>Konektujmo se</p>
           <Element as="div" className="navigation__col__socials__icons">
