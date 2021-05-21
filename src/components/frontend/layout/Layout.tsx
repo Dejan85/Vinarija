@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { Header, Footer } from "src/components/frontend";
+import { Element } from "src/components/ui";
 
 const Layout = ({
   children,
@@ -10,9 +11,9 @@ const Layout = ({
     window.scrollTo(0, 0);
   }, []);
   return (
-    <main className="layout">
+    <Element as="main" className="layout">
       <Head>
-        <title>{title}</title>
+        <Element as="title">{title}</Element>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
@@ -36,7 +37,7 @@ const Layout = ({
       <Header />
       {children}
       <Footer />
-    </main>
+    </Element>
   );
 };
 

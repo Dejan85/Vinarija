@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Element, Link } from "src/components/ui";
+import { Image, Element, Link, Paragraph } from "src/components/ui";
 
 const Navigation = (): JSX.Element => {
   return (
