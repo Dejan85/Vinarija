@@ -11,7 +11,7 @@ const WelcomePage = (): JSX.Element => {
         layout="fill"
         objectFit="cover"
       />
-      <Heading as="h1">Vinarija Rnjak</Heading>
+      <Heading className="welcome-page__heading" as="h1">Vinarija Rnjak</Heading>
       <Button as="a">Pogledajte Ponudu</Button>
     </SubContainer>
   );
