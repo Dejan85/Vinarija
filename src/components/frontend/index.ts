@@ -6,5 +6,5 @@ export { HomeProducts } from "./home/home-products";
 export { HomeGallery } from "./home/home-gallery";
 export { HomeMoments } from "./home/home-moments";
 export { Navigation } from "./navigation";
-export { Vine } from "./vine";
+export { Vines } from "./vines";
 export { Footer } from "./footer";
