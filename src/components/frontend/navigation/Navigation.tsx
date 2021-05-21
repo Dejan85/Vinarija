@@ -17,21 +17,27 @@ const Navigation = (): JSX.Element => {
           Naslovna
         </Link.ActiveLink>
 
-        <Link href="/vina" className="navigation__col__nav-links">
+        <Link.ActiveLink href="/vina" className="navigation__col__nav-links">
           Vina
-        </Link>
+        </Link.ActiveLink>
 
-        <Link href="/vinogradi" className="navigation__col__nav-links">
+        <Link.ActiveLink
+          href="/vinogradi"
+          className="navigation__col__nav-links"
+        >
           Vinogradi
-        </Link>
+        </Link.ActiveLink>
 
-        <Link href="/prodavnica" className="navigation__col__nav-links">
+        <Link.ActiveLink
+          href="/prodavnica"
+          className="navigation__col__nav-links"
+        >
           Prodavnica
-        </Link>
+        </Link.ActiveLink>
 
-        <Link href="/kontakt" className="navigation__col__nav-links">
+        <Link.ActiveLink href="/kontakt" className="navigation__col__nav-links">
           Kontakt
-        </Link>
+        </Link.ActiveLink>
         <Element as="div" className="navigation__col__socials">
           <p>Konektujmo se</p>
           <Element as="div" className="navigation__col__socials__icons">

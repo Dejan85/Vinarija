@@ -12,7 +12,7 @@ const WelcomePage = (): JSX.Element => {
         objectFit="cover"
       />
       <Heading as="h1">Vinarija Rnjak</Heading>
-      <Button as="button">Pogledajte Ponudu</Button>
+      <Button as="a">Pogledajte Ponudu</Button>
     </SubContainer>
   );
 };
