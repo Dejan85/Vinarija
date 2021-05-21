@@ -1,5 +1,11 @@
 import React from "react";
-import { Image, Element, Link, Paragraph } from "src/components/ui";
+import {
+  Image,
+  Element,
+  Link,
+  Paragraph,
+  SocialLinks,
+} from "src/components/ui";
 
 const Navigation = (): JSX.Element => {
   return (
@@ -40,14 +46,7 @@ const Navigation = (): JSX.Element => {
         </Link.ActiveLink>
         <Element as="div" className="navigation__col__socials">
           <p>Konektujmo se</p>
-          <Element as="div" className="navigation__col__socials__icons">
-            <a href="#">
-              <img src="/icons/socials/facebook.svg" alt="facebook" />
-            </a>
-            <a href="#">
-              <img src="/icons/socials/instagram.svg" alt="instagram" />
-            </a>
-          </Element>
+          <SocialLinks className="navigation__col__socials__icons" />
         </Element>
       </Element>
       <Element as="div" className="navigation__col">
