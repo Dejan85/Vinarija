@@ -1,8 +1,8 @@
 import React from "react";
 import {
+  SubContainer,
   Element,
   Paragraph,
-  SubContainer,
   SocialLinks,
 } from "src/components/ui";
 
