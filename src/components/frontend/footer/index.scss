@@ -21,7 +21,7 @@
 
   &__social-links {
     display: flex;
-
+    margin-right: -30rem;
     .social-links {
       a > img {
         margin: 0 0.7rem;
@@ -37,6 +37,14 @@
       font-size: $poppins;
       font-size: 3rem;
       font-weight: 500;
+    }
+  }
+
+  &__rights {
+    p {
+      color: white;
+      font-size: 1.2rem;
+      text-transform: uppercase;
     }
   }
 }

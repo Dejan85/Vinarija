@@ -28,6 +28,12 @@ const Footer = (): JSX.Element => {
         <Element as="div" className="footer__social-links">
           <SocialLinks />
         </Element>
+
+        <Element as="div" className="footer__rights">
+          <Paragraph as="p">
+            © {`${new Date().getFullYear()}`} All rights reserved
+          </Paragraph>
+        </Element>
       </SubContainer>
     </Element>
   );
