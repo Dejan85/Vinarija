@@ -1,7 +1,8 @@
 import React from "react";
+import { Vine } from "src/components/frontend";
 
 const Vina = (): JSX.Element => {
-  return <div>VINA</div>;
+  return <Vine />;
 };
 
 export default Vina;
