@@ -13,6 +13,32 @@
 
 /**********************************WIDGETS****************************************/
 
+/**********************************UI****************************************/
+
+// button
+@import "src/components/ui/button";
+
+// sub-container
+@import "src/components/ui/sub-container";
+
+// carousel
+@import "src/components/ui/carousel";
+
+// heading
+@import "src/components/ui/heading";
+
+// paragraph
+@import "src/components/ui/paragraph";
+
+// link
+@import "src/components/ui/link";
+
+// image
+@import "src/components/ui/image";
+
+// social-links
+@import "src/components/ui/social-links";
+
 /**********************************FRONTEND****************************************/
 
 // layout
@@ -42,11 +68,5 @@
 // home-moments
 @import "src/components/frontend/home/home-moments";
 
-/**********************************UI****************************************/
-@import "src/components/ui/button";
-@import "src/components/ui/sub-container";
-@import "src/components/ui/carousel";
-@import "src/components/ui/heading";
-@import "src/components/ui/paragraph";
-@import "src/components/ui/link";
-@import "src/components/ui/image";
+// footer
+@import "src/components/frontend/footer";

@@ -3,6 +3,11 @@
   align-items: center;
   padding-top: 10rem;
 
+  &__text {
+    width: 50%;
+    margin: 2rem 0;
+  }
+
   &__text:nth-child(2) {
     font-weight: 600;
   }

@@ -1,0 +1,16 @@
+.social-links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a > img {
+    width: 3rem;
+    transition: all 0.3s ease-out;
+    margin: 0 1.5rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

@@ -1,5 +1,11 @@
 import React from "react";
-import { Image, Element, Link, Paragraph } from "src/components/ui";
+import {
+  Image,
+  Element,
+  Link,
+  Paragraph,
+  SocialLinks,
+} from "src/components/ui";
 
 const Navigation = (): JSX.Element => {
   return (
@@ -17,31 +23,30 @@ const Navigation = (): JSX.Element => {
           Naslovna
         </Link.ActiveLink>
 
-        <Link href="/vina" className="navigation__col__nav-links">
+        <Link.ActiveLink href="/vina" className="navigation__col__nav-links">
           Vina
-        </Link>
+        </Link.ActiveLink>
 
-        <Link href="/vinogradi" className="navigation__col__nav-links">
+        <Link.ActiveLink
+          href="/vinogradi"
+          className="navigation__col__nav-links"
+        >
           Vinogradi
-        </Link>
+        </Link.ActiveLink>
 
-        <Link href="/prodavnica" className="navigation__col__nav-links">
+        <Link.ActiveLink
+          href="/prodavnica"
+          className="navigation__col__nav-links"
+        >
           Prodavnica
-        </Link>
+        </Link.ActiveLink>
 
-        <Link href="/kontakt" className="navigation__col__nav-links">
+        <Link.ActiveLink href="/kontakt" className="navigation__col__nav-links">
           Kontakt
-        </Link>
+        </Link.ActiveLink>
         <Element as="div" className="navigation__col__socials">
           <p>Konektujmo se</p>
-          <Element as="div" className="navigation__col__socials__icons">
-            <a href="#">
-              <img src="/icons/socials/facebook.svg" alt="facebook" />
-            </a>
-            <a href="#">
-              <img src="/icons/socials/instagram.svg" alt="instagram" />
-            </a>
-          </Element>
+          <SocialLinks className="navigation__col__socials__icons" />
         </Element>
       </Element>
       <Element as="div" className="navigation__col">
