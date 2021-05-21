@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Element } from "src/components/ui";
 import { Squash as Hamburger } from "hamburger-react";
 import { Power3, TimelineMax } from "gsap";
 
@@ -41,9 +42,9 @@ const Nav = (): JSX.Element => {
   }, [toggleNav]);
 
   return (
-    <nav className="nav">
+    <Element as="nav" className="nav">
       <Hamburger color={hamburgerColor} onToggle={toggleHandler} />
-    </nav>
+    </Element>
   );
 };
 
