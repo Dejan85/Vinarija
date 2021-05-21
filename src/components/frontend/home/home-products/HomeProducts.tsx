@@ -1,6 +1,5 @@
 import React from "react";
-import { SubContainer, Link } from "src/components/ui";
-import Product from "src/components/frontend/home/home-products/partials/Product";
+import { SubContainer, Link, Product } from "src/components/ui";
 const Products = (): JSX.Element => {
   return (
     <>

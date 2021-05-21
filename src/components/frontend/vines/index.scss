@@ -1,0 +1,28 @@
+.vine {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10rem;
+
+  &__products {
+    display: flex;
+  }
+
+  &__heading {
+    text-align: center;
+    line-height: 70px;
+    padding: 5rem 0;
+  }
+
+  &__text {
+    padding-bottom: 3rem;
+    max-width: 50rem;
+    width: 100%;
+    font-size: 1.8rem;
+    color: $main-color;
+
+    &--small-text {
+      font-size: 1.6rem;
+      color: lighten($color: $main-color, $amount: 10%);
+    }
+  }
+}

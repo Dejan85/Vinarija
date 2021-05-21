@@ -11,7 +11,6 @@ import {
 const Index = (): JSX.Element => {
   return (
     <>
-      <Navigation />
       <WelcomePage />
       <HomeAbout />
       <HomeProducts />
