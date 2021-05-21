@@ -1,8 +1,6 @@
 import React from "react";
 import { SubContainer, LinkUi } from "src/components/ui";
 import Product from "src/components/frontend/home/home-products/partials/Product";
-import Link from "next/link";
-
 const Products = (): JSX.Element => {
   return (
     <>

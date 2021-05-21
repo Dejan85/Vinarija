@@ -5,3 +5,4 @@ export { Heading } from "./heading";
 export { Element } from "./element";
 export { Paragraph } from "./paragraph";
 export { LinkUi } from "./link";
+export { Image } from "./image";

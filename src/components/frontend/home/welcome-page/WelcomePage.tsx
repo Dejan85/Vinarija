@@ -1,12 +1,12 @@
 import React from "react";
-import { SubContainer, Button, Heading } from "src/components/ui";
-import Image from "next/image";
+import { SubContainer, Button, Heading, Image } from "src/components/ui";
 
 const WelcomePage = (): JSX.Element => {
   return (
     <SubContainer className="welcome-page" as="section">
       <Image
         src="/images/home/welcome-page/background.webp"
+        alt="image"
         className="welcome-page__background-image"
         layout="fill"
         objectFit="cover"

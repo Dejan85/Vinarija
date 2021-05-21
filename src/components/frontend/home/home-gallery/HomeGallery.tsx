@@ -5,7 +5,6 @@ const HomeGallery = (): JSX.Element => {
   return (
     <SubContainer className="home-gallery" as="section">
       <Heading as="h2">Nasi vinogradi</Heading>
-
       <CarouselUi />
     </SubContainer>
   );
