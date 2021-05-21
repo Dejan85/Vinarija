@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { Image, Paragraph } from "src/components/ui";
 
 const Product = (props): JSX.Element => {
   const { image, heading } = props;
@@ -15,7 +15,9 @@ const Product = (props): JSX.Element => {
           objectFit="cover"
         />
       )}
-      <h3 className="product__heading">{heading}</h3>
+      <Paragraph as="p" className="product__heading">
+        {heading}
+      </Paragraph>
     </div>
   );
 };
