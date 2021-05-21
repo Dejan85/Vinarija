@@ -1,5 +1,5 @@
 import React from "react";
-import { SubContainer, Button } from "src/components/ui";
+import { SubContainer, Button, Heading } from "src/components/ui";
 import Image from "next/image";
 
 const WelcomePage = (): JSX.Element => {
@@ -11,7 +11,7 @@ const WelcomePage = (): JSX.Element => {
         layout="fill"
         objectFit="cover"
       />
-      <h1 className="welcome-page__heading">Vinarija Rnjak</h1>
+      <Heading as="h1">Vinarija Rnjak</Heading>
       <button className="welcome-page__button">
         Pogledajte Ponudu
         <div className="welcome-page__button__horizontal"></div>
