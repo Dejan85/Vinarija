@@ -13,23 +13,23 @@ const Navigation = (): JSX.Element => {
           height=""
           objectFit="contain"
         />
-        <Link href="/test" className="navigation__col__nav-links">
+        <Link.ActiveLink href="/" className="navigation__col__nav-links">
           Naslovna
-        </Link>
+        </Link.ActiveLink>
 
-        <Link href="/" className="navigation__col__nav-links">
+        <Link href="/vina" className="navigation__col__nav-links">
           Vina
         </Link>
 
-        <Link href="/" className="navigation__col__nav-links">
+        <Link href="/vinogradi" className="navigation__col__nav-links">
           Vinogradi
         </Link>
 
-        <Link href="/" className="navigation__col__nav-links">
+        <Link href="/prodavnica" className="navigation__col__nav-links">
           Prodavnica
         </Link>
 
-        <Link href="/" className="navigation__col__nav-links">
+        <Link href="/kontakt" className="navigation__col__nav-links">
           Kontakt
         </Link>
         <Element as="div" className="navigation__col__socials">
