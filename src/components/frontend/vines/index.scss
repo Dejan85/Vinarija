@@ -1,4 +1,9 @@
 .vine {
   flex-direction: column;
   align-items: center;
+
+  &__heading {
+    text-align: center;
+    line-height: 70px;
+  }
 }
