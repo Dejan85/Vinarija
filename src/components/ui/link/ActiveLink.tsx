@@ -4,7 +4,7 @@ import { LinkProps } from "./types";
 const activeClassName: string = "active";
 
 function ActiveLink(props: LinkProps) {
-  const { children, href, className: customClassName } = props;
+  const { children, href, className: customClassName, setToggleNav } = props;
   const router = useRouter();
   const className =
     router.asPath === href
@@ -14,6 +14,7 @@ function ActiveLink(props: LinkProps) {
   const handleClick = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     router.push(href);
+    setToggleNav();
   };
 
   return (

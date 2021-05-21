@@ -6,8 +6,11 @@ import {
   Paragraph,
   SocialLinks,
 } from "src/components/ui";
+import { useNavToggle } from "src/hooks";
 
 const Navigation = (): JSX.Element => {
+  const { closeNav } = useNavToggle();
+
   return (
     <Element as="div" className="navigation">
       <Element as="div" className="navigation__col">
@@ -19,17 +22,26 @@ const Navigation = (): JSX.Element => {
           height=""
           objectFit="contain"
         />
-        <Link.ActiveLink href="/" className="navigation__col__nav-links">
+        <Link.ActiveLink
+          href="/"
+          className="navigation__col__nav-links"
+          setToggleNav={closeNav}
+        >
           Naslovna
         </Link.ActiveLink>
 
-        <Link.ActiveLink href="/vina" className="navigation__col__nav-links">
+        <Link.ActiveLink
+          href="/vina"
+          className="navigation__col__nav-links"
+          setToggleNav={closeNav}
+        >
           Vina
         </Link.ActiveLink>
 
         <Link.ActiveLink
           href="/vinogradi"
           className="navigation__col__nav-links"
+          setToggleNav={closeNav}
         >
           Vinogradi
         </Link.ActiveLink>
@@ -37,11 +49,16 @@ const Navigation = (): JSX.Element => {
         <Link.ActiveLink
           href="/prodavnica"
           className="navigation__col__nav-links"
+          setToggleNav={closeNav}
         >
           Prodavnica
         </Link.ActiveLink>
 
-        <Link.ActiveLink href="/kontakt" className="navigation__col__nav-links">
+        <Link.ActiveLink
+          href="/kontakt"
+          className="navigation__col__nav-links"
+          setToggleNav={closeNav}
+        >
           Kontakt
         </Link.ActiveLink>
         <Element as="div" className="navigation__col__socials">
