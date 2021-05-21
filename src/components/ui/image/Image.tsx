@@ -11,6 +11,7 @@ const ImageUi = (props: ImageProps) => {
     layout,
     eager,
     objectFit,
+    objectPosition,
     className: customClassName,
   } = props;
   return (
@@ -23,6 +24,7 @@ const ImageUi = (props: ImageProps) => {
       eager={eager}
       objectFit={objectFit}
       className={customClassName}
+      objectPosition={objectPosition}
     />
   );
 };

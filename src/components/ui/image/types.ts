@@ -7,4 +7,5 @@ export interface ImageProps {
   eager?: boolean;
   className?: string;
   objectFit?: "fill" | "contain" | "cover" | "none" | "scale-down";
+  objectPosition?: string;
 }
