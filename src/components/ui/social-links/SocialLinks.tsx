@@ -3,8 +3,7 @@ import { Element, Link } from "src/components/ui";
 import { SocialLinksProps } from "./types";
 
 const SocialLinks = (props: SocialLinksProps): JSX.Element => {
-  const { className: customClassName = "navigation__col__socials__icons" } =
-    props;
+  const { className: customClassName = "social-links" } = props;
   return (
     <Element as="div" className={customClassName}>
       <Link href="#">
