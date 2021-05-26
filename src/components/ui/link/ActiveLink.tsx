@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { LinkProps } from "./types";
+import Link from "next/link";
 
 const activeClassName: string = "active";
 
@@ -18,9 +19,11 @@ function ActiveLink(props: LinkProps) {
   };
 
   return (
-    <a href={href} className={className} onClick={handleClick}>
-      {children}
-    </a>
+    <Link href={href}>
+      <a className={className} onClick={handleClick}>
+        {children}
+      </a>
+    </Link>
   );
 }
 

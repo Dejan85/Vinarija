@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import { Header, Footer, Navigation } from "src/components/frontend";
 import { Element } from "src/components/ui";
+import { NavProvider } from "contexts/navigation/NavContext";
 
 const Layout = ({
   children,
@@ -34,8 +35,10 @@ const Layout = ({
           content="vino, vina, vinograd, vinogradi, rose, chardonnay, sauvignon blanc, pinot noir, cabernet sauvignon, merlot"
         />
       </Head>
-      <Header />
-      <Navigation />
+      <NavProvider>
+        <Header />
+        <Navigation />
+      </NavProvider>
 
       {children}
       <Footer />

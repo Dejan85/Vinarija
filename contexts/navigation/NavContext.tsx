@@ -1,10 +1,16 @@
-import { useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 import { Power3, TimelineMax } from "gsap";
 
-const useNavToggle = () => {
+const NavContext = createContext(null);
+
+const NavProvider = ({ children }) => {
   const [toggleNav, setToggleNav] = useState(false);
-  const [hamburgerColor, setHamburgerColor] = useState("red");
   const tl = new TimelineMax();
+
+  const closeNav = (): void => {
+    tl.to(".navigation", { left: "-100%", ease: Power3.easeOut }, 0.1);
+    setToggleNav(!toggleNav);
+  };
 
   useEffect(() => {
     if (toggleNav) {
@@ -27,20 +33,22 @@ const useNavToggle = () => {
         { opacity: 1, transform: "scale(1)", ease: Power3.easeOut },
         1
       );
-      setHamburgerColor("#fff");
     } else {
       tl.to(".navigation", { left: "-100%", ease: Power3.easeOut }, 0.1);
-      setHamburgerColor("#1d1d1d");
     }
   }, [toggleNav]);
 
-  const closeNav = (): void => {
-    tl.to(".navigation", { left: "-100%", ease: Power3.easeOut }, 0.1);
-    setHamburgerColor("#1d1d1d");
-    setToggleNav(false);
-  };
-
-  return { toggleNav, hamburgerColor, setToggleNav, closeNav };
+  return (
+    <NavContext.Provider
+      value={{
+        setToggleNav,
+        toggleNav,
+        closeNav,
+      }}
+    >
+      {children}
+    </NavContext.Provider>
+  );
 };
 
-export default useNavToggle;
+export { NavContext, NavProvider };

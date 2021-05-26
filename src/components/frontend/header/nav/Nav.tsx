@@ -1,20 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { Element } from "src/components/ui";
 import { Squash as Hamburger } from "hamburger-react";
-import { useNavToggle } from "src/hooks";
+import { NavContext } from "contexts/navigation/NavContext";
 
 const Nav = (): JSX.Element => {
-  const { toggleNav, hamburgerColor, setToggleNav, closeNav } = useNavToggle();
+  const { toggleNav, setToggleNav } = useContext(NavContext);
 
   const toggleHandler = () => {
     setToggleNav(!toggleNav);
   };
 
-  console.log("test", hamburgerColor);
-
   return (
     <Element as="nav" className="nav">
-      <Hamburger color={hamburgerColor} onToggle={toggleHandler} />
+      <Hamburger
+        color={!toggleNav ? "#1d1d1d" : "#fff"}
+        toggled={toggleNav}
+        onToggle={toggleHandler}
+      />
     </Element>
   );
 };

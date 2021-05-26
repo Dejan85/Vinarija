@@ -1,4 +1,4 @@
-import React from "react";
+import { useContext } from "react";
 import {
   Image,
   Element,
@@ -6,10 +6,10 @@ import {
   Paragraph,
   SocialLinks,
 } from "src/components/ui";
-import { useNavToggle } from "src/hooks";
+import { NavContext } from "contexts/navigation/NavContext";
 
 const Navigation = (): JSX.Element => {
-  const { closeNav } = useNavToggle();
+  const { closeNav } = useContext(NavContext);
 
   return (
     <Element as="div" className="navigation">
