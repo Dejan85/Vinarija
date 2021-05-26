@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Element } from "src/components/ui";
 import { Squash as Hamburger } from "hamburger-react";
-import { NavContext } from "contexts/navigation/NavContext";
+import { NavContext } from "src/contexts/navigation/NavContext";
 
 const Nav = (): JSX.Element => {
   const { toggleNav, setToggleNav } = useContext(NavContext);

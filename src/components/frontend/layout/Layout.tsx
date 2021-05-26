@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import { Header, Footer, Navigation } from "src/components/frontend";
 import { Element } from "src/components/ui";
-import { NavProvider } from "contexts/navigation/NavContext";
+import { NavProvider } from "src/contexts/navigation/NavContext";
 
 const Layout = ({
   children,

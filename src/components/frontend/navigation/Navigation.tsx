@@ -6,7 +6,7 @@ import {
   Paragraph,
   SocialLinks,
 } from "src/components/ui";
-import { NavContext } from "contexts/navigation/NavContext";
+import { NavContext } from "src/contexts/navigation/NavContext";
 
 const Navigation = (): JSX.Element => {
   const { closeNav } = useContext(NavContext);
