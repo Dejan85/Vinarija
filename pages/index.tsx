@@ -1,4 +1,5 @@
-import React from "react";
+import { getAllContent } from "utils/content-util";
+
 import {
   WelcomePage,
   HomeAbout,
@@ -7,16 +8,27 @@ import {
   HomeMoments,
 } from "src/components/frontend";
 
-const Index = (): JSX.Element => {
+const Index = (props): JSX.Element => {
+  const {
+    allContent: { homeAbout, welcomePage, homeProducts },
+  } = props;
+
   return (
     <>
-      <WelcomePage />
-      <HomeAbout />
-      <HomeProducts />
+      <WelcomePage content={welcomePage} />
+      <HomeAbout content={homeAbout} />
+      <HomeProducts content={homeProducts} />
       <HomeGallery />
       <HomeMoments />
     </>
   );
+};
+
+export const getStaticProps = () => {
+  const allContent = getAllContent();
+  return {
+    props: { allContent },
+  };
 };
 
 export default Index;
