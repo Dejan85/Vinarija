@@ -9,7 +9,8 @@ import {
 
 const Wines = (props): JSX.Element => {
   const {
-    content: { heading, images, text, vinesHeading },
+    winesPage: { heading, text },
+    allWines: { vinesHeading, images },
   } = props;
 
   return (

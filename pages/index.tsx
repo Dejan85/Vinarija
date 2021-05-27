@@ -1,4 +1,4 @@
-import { getAllContent } from "utils/content-util";
+import { getAllContent, getAllWines } from "utils/content-util";
 
 import {
   WelcomePage,
@@ -11,13 +11,14 @@ import {
 const Index = (props): JSX.Element => {
   const {
     allContent: { homeAbout, welcomePage, homeProducts },
+    allWines: { allWines },
   } = props;
 
   return (
     <>
-      <WelcomePage content={welcomePage} />
-      <HomeAbout content={homeAbout} />
-      <HomeProducts content={homeProducts} />
+      <WelcomePage welcomePage={welcomePage} />
+      <HomeAbout homeAbout={homeAbout} />
+      <HomeProducts allWines={allWines} homeProducts={homeProducts} />
       <HomeGallery />
       <HomeMoments />
     </>
@@ -26,8 +27,9 @@ const Index = (props): JSX.Element => {
 
 export const getStaticProps = () => {
   const allContent = getAllContent("home");
+  const allWines = getAllWines("all-wines");
   return {
-    props: { allContent },
+    props: { allContent, allWines },
   };
 };
 

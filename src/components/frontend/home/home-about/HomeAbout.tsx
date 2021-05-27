@@ -3,7 +3,7 @@ import { SubContainer, Heading, Paragraph } from "src/components/ui";
 
 const HomeAbout = (props): JSX.Element => {
   const {
-    content: { heading, text },
+    homeAbout: { heading, text },
   } = props;
 
   return (

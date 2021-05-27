@@ -24,6 +24,22 @@ export function getContentData(contentIdentifier, dir) {
   return contentData;
 }
 
+export const getAllWines = (dir) => {
+  const allWines = {};
+  const allWinesFiles = getContentFiles(dir);
+
+  const wines = allWinesFiles.map((contentFile) => {
+    return getContentData(contentFile, dir);
+  });
+
+  wines.forEach((item) => {
+    const { slug } = item;
+    allWines[slug] = item;
+  });
+
+  return allWines;
+};
+
 export function getAllContent(dir) {
   const allContent = {};
   const contentFiles = getContentFiles(dir);

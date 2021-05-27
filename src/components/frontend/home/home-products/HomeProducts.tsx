@@ -3,7 +3,8 @@ import { SubContainer, Link, Product } from "src/components/ui";
 
 const HomeProducts = (props): JSX.Element => {
   const {
-    content: { images, vinesHeading, buttonText },
+    allWines: { images, vinesHeading },
+    homeProducts: { buttonText },
   } = props;
   return (
     <>
