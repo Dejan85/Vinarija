@@ -25,7 +25,7 @@ const Index = (props): JSX.Element => {
 };
 
 export const getStaticProps = () => {
-  const allContent = getAllContent();
+  const allContent = getAllContent("home");
   return {
     props: { allContent },
   };

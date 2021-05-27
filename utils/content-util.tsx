@@ -3,15 +3,15 @@ import path from "path";
 
 import matter from "gray-matter";
 
-const contentDirectory = path.join(process.cwd(), "content/home");
+const contentDirectory = (dir) => path.join(process.cwd(), `content/${dir}`);
 
-export function getContentFiles() {
-  return fs.readdirSync(contentDirectory);
+export function getContentFiles(dir) {
+  return fs.readdirSync(contentDirectory(dir));
 }
 
-export function getContentData(contentIdentifier) {
+export function getContentData(contentIdentifier, dir) {
   const contentSlug = contentIdentifier.replace(/\.md$/, ""); // removes the file extension
-  const filePath = path.join(contentDirectory, `${contentSlug}.md`);
+  const filePath = path.join(contentDirectory(dir), `${contentSlug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(fileContent);
 
@@ -24,12 +24,12 @@ export function getContentData(contentIdentifier) {
   return contentData;
 }
 
-export function getAllContent() {
+export function getAllContent(dir) {
   const allContent = {};
-  const contentFiles = getContentFiles();
+  const contentFiles = getContentFiles(dir);
 
   const contents = contentFiles.map((contentFile) => {
-    return getContentData(contentFile);
+    return getContentData(contentFile, dir);
   });
 
   contents.forEach((item) => {

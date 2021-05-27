@@ -1,8 +1,20 @@
 import React from "react";
-import { Vines } from "src/components/frontend";
+import { Wines } from "src/components/frontend";
+import { getAllContent } from "utils/content-util";
 
-const Vina = (): JSX.Element => {
-  return <Vines />;
+const Vina = (props): JSX.Element => {
+  const {
+    allContent: { winesPage },
+  } = props;
+
+  return <Wines content={winesPage} />;
+};
+
+export const getStaticProps = () => {
+  const allContent = getAllContent("wine");
+  return {
+    props: { allContent },
+  };
 };
 
 export default Vina;
