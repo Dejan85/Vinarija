@@ -3,8 +3,8 @@ export interface ImageProps {
   alt: string;
   width?: string;
   height?: string;
-  layout?: "intrinsic" | "fixed" | "responsive" | "fill";
-  eager?: boolean;
+  layout?: any;
+  eager?: any;
   className?: string;
   objectFit?: "fill" | "contain" | "cover" | "none" | "scale-down";
   objectPosition?: string;

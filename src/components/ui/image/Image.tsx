@@ -22,7 +22,7 @@ const ImageUi = (props: ImageProps) => {
       width={width}
       height={height}
       layout={layout}
-      eager={eager}
+      // eager={eager}
       objectFit={objectFit}
       className={customClassName}
       objectPosition={objectPosition}
