@@ -66,16 +66,7 @@ const Navigation = (): JSX.Element => {
           <SocialLinks className="navigation__col__socials__icons" />
         </Element>
       </Element>
-      <Element as="div" className="navigation__col">
-        <Image
-          className="navigation__col__nav-images"
-          src="/images/home/welcome-page/background.webp"
-          alt="image"
-          width="800"
-          height="600"
-          objectFit="contain"
-        />
-      </Element>
+      <Element as="div" className="navigation__col"></Element>
     </Element>
   );
 };
