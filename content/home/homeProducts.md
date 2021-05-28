@@ -1,3 +1,0 @@
----
-buttonText: Pogledajte više
----

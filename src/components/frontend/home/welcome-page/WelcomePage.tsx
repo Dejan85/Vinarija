@@ -3,7 +3,9 @@ import { SubContainer, Button, Heading, Image } from "src/components/ui";
 
 const WelcomePage = (props): JSX.Element => {
   const {
-    welcomePage: { heading, image, buttonText },
+    welcomePage: {
+      data: { heading, image, buttonText },
+    },
   } = props;
   return (
     <SubContainer className="welcome-page" as="section">

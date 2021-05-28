@@ -1,7 +1,5 @@
-import fs from "fs";
+import fs, { promises } from "fs";
 import path from "path";
-
-import matter from "gray-matter";
 
 const contentDirectory = (dir) => path.join(process.cwd(), `content/${dir}`);
 
@@ -9,49 +7,47 @@ export function getContentFiles(dir) {
   return fs.readdirSync(contentDirectory(dir));
 }
 
-export function getContentData(contentIdentifier, dir) {
-  const contentSlug = contentIdentifier.replace(/\.md$/, ""); // removes the file extension
-  const filePath = path.join(contentDirectory(dir), `${contentSlug}.md`);
-  const fileContent = fs.readFileSync(filePath, "utf-8");
-  const { data, content } = matter(fileContent);
+export function getContentData(contentFile, dir) {
+  const contentSlug = contentFile.replace(/\.json$/, "");
+  const filePath = path.join(contentDirectory(dir), `${contentSlug}.json`);
+
+  const jsonData = fs.readFileSync(filePath);
+  const data = JSON.parse(jsonData.toString());
 
   const contentData = {
     slug: contentSlug,
-    ...data,
-    content,
+    data,
   };
 
+  return contentData;
+}
+
+export function getAllContent(dir) {
+  const contentData = {};
+  const contentFiles = getContentFiles(dir);
+  const allContent = contentFiles.map((contentFile) => {
+    return getContentData(contentFile, dir);
+  });
+
+  allContent.forEach((item) => (contentData[item.slug] = item));
   return contentData;
 }
 
 export const getAllWines = (dir) => {
   const allWines = {};
   const allWinesFiles = getContentFiles(dir);
-
   const wines = allWinesFiles.map((contentFile) => {
     return getContentData(contentFile, dir);
   });
 
-  wines.forEach((item) => {
-    const { slug } = item;
-    allWines[slug] = item;
-  });
-
+  wines.forEach((item) => (allWines[item.slug] = item));
   return allWines;
 };
 
-export function getAllContent(dir) {
-  const allContent = {};
-  const contentFiles = getContentFiles(dir);
+export async function getData(dir) {
+  const filePath = path.join(process.cwd(), `content/home/homeAbout.json`);
+  const jsonData = await promises.readFile(filePath);
+  const data = JSON.parse(jsonData.toString());
 
-  const contents = contentFiles.map((contentFile) => {
-    return getContentData(contentFile, dir);
-  });
-
-  contents.forEach((item) => {
-    const { slug } = item;
-    allContent[slug] = item;
-  });
-
-  return allContent;
+  return data;
 }

@@ -1,8 +1,0 @@
----
-heading: O NAMA
-text:
-  [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at nulla tempora ipsum voluptatibus magnam aut veniam, eos adipisci veritatis enim accusantium nostrum molestias voluptate blanditiis nobis. Qui, perspiciatis sit.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at nulla tempora ipsum voluptatibus magnam aut veniam, eos adipisci veritatis enim accusantium nostrum molestias voluptate blanditiis nobis. Qui, perspiciatis sit.",
-  ]
----

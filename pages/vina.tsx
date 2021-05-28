@@ -8,6 +8,8 @@ const Vina = (props): JSX.Element => {
     allWines: { allWines },
   } = props;
 
+  console.log("test", allWines);
+
   return <Wines winesPage={winesPage} allWines={allWines} />;
 };
 

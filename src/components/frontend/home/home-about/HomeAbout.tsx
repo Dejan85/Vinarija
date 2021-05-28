@@ -3,7 +3,9 @@ import { SubContainer, Heading, Paragraph } from "src/components/ui";
 
 const HomeAbout = (props): JSX.Element => {
   const {
-    homeAbout: { heading, text },
+    homeAbout: {
+      data: { heading, text },
+    },
   } = props;
 
   return (

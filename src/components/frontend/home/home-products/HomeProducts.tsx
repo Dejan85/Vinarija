@@ -3,14 +3,17 @@ import { SubContainer, Link, Product } from "src/components/ui";
 
 const HomeProducts = (props): JSX.Element => {
   const {
-    allWines: { images, vinesHeading },
-    homeProducts: { buttonText },
+    allWines: { data },
+    homeProducts: {
+      data: { buttonText },
+    },
   } = props;
+
   return (
     <>
       <SubContainer className="products" as="section">
-        {images.map((image, index) => (
-          <Product key={index} heading={vinesHeading[index]} image={image} />
+        {data.map(({ image, name }, index) => (
+          <Product key={index} heading={name} image={image} />
         ))}
       </SubContainer>
       <Link href="/" className="products__link">

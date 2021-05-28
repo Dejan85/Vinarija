@@ -25,12 +25,12 @@ const Index = (props): JSX.Element => {
   );
 };
 
-export const getStaticProps = () => {
+export async function getStaticProps() {
   const allContent = getAllContent("home");
   const allWines = getAllWines("all-wines");
   return {
     props: { allContent, allWines },
   };
-};
+}
 
 export default Index;
