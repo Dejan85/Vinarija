@@ -1,37 +1,37 @@
 [
     {
         "name": "Chardonnay",
-        "image": "/images/home/products/wine-11.png",
+        "image": "/images/home/products/wine-11.webp",
         "price": "$15.99",
         "shopHeading": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
     },
     {
         "name": "Sauvignon Blanc",
-        "image": "/images/home/products/wine-12.png",
+        "image": "/images/home/products/wine-12.webp",
         "price": "$15.99",
         "shopHeading": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
     },
     {
         "name": "Cabernet Sauvignon",
-        "image": "/images/home/products/wine-13.png",
+        "image": "/images/home/products/wine-13.webp",
         "price": "$15.99",
         "shopHeading": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
     },
     {
         "name": "Merlot",
-        "image": "/images/home/products/wine-14.png",
+        "image": "/images/home/products/wine-14.webp",
         "price": "$15.99",
         "shopHeading": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
     },
     {
         "name": "Pinot Noir",
-        "image": "/images/home/products/wine-15.png",
+        "image": "/images/home/products/wine-15.webp",
         "price": "$15.99",
         "shopHeading": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
     },
     {
         "name": "Rose",
-        "image": "/images/home/products/wine-16.png",
+        "image": "/images/home/products/wine-16.webp",
         "price": "$15.99",
         "shopHeading": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
     }
