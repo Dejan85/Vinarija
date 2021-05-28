@@ -4,13 +4,11 @@ import { getAllContent, getAllWines } from "utils/content-util";
 
 const Vina = (props): JSX.Element => {
   const {
-    allContent: { winesPage },
+    allContent: { winePage },
     allWines: { allWines },
   } = props;
 
-  console.log("test", allWines);
-
-  return <Wines winesPage={winesPage} allWines={allWines} />;
+  return <Wines winesPage={winePage} allWines={allWines} />;
 };
 
 export const getStaticProps = () => {

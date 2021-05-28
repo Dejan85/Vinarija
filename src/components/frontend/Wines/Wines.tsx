@@ -9,8 +9,10 @@ import {
 
 const Wines = (props): JSX.Element => {
   const {
-    winesPage: { heading, text },
-    allWines: { vinesHeading, images },
+    winesPage: {
+      data: { heading, text },
+    },
+    allWines: { data },
   } = props;
 
   return (
@@ -28,8 +30,8 @@ const Wines = (props): JSX.Element => {
       })}
 
       <Element as="div" className="wines__products">
-        {images.map((image: string, index: number) => (
-          <Product key={index} heading={vinesHeading[index]} image={image} />
+        {data.map(({ name, image }, index: number) => (
+          <Product key={index} heading={name} image={image} />
         ))}
       </Element>
     </SubContainer>
