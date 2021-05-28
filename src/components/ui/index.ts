@@ -8,3 +8,4 @@ export { Link } from "./link";
 export { Image } from "./image";
 export { SocialLinks } from "./social-links";
 export { Product } from "./product";
+export { ShopProductCard } from "./shop-product-card";

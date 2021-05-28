@@ -7,4 +7,5 @@ export { HomeGallery } from "./home/home-gallery";
 export { HomeMoments } from "./home/home-moments";
 export { Navigation } from "./navigation";
 export { Wines } from "./wines";
+export { Shop } from "./shop";
 export { Footer } from "./footer";

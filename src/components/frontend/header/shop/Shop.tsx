@@ -9,7 +9,7 @@ const Shop = (): JSX.Element => {
         alt="img"
         width="35px"
         height="35px"
-        className="shop"
+        className="shop-icon"
       />
     </Link>
   );

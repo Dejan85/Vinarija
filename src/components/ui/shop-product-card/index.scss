@@ -1,0 +1,32 @@
+.shop-product-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50rem;
+  margin-bottom: 7rem;
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 2rem 0;
+  }
+
+  &__text {
+    padding-bottom: 2rem;
+  }
+
+  &__price {
+    padding-bottom: 2rem;
+  }
+
+  &__link {
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: $lato;
+    font-weight: 700;
+    outline: 1px solid $main-color;
+    color: $main-color;
+  }
+}
