@@ -1,4 +1,4 @@
-import React from "react";
+import { ShopProps } from "./types";
 import {
   Heading,
   Element,
@@ -6,7 +6,7 @@ import {
   ShopProductCard,
 } from "src/components/ui";
 
-const Shop = (props): JSX.Element => {
+const Shop = (props: ShopProps): JSX.Element => {
   const {
     shopContent: {
       shopPage: {

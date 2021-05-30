@@ -8,4 +8,5 @@ export { HomeMoments } from "./home/home-moments";
 export { Navigation } from "./navigation";
 export { Wines } from "./wines";
 export { Shop } from "./shop";
+export { Contact } from "./contact";
 export { Footer } from "./footer";

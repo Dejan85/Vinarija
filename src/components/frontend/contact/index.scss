@@ -1,0 +1,11 @@
+.contact {
+  &__form-container {
+    width: 50%;
+    outline: 2px solid green;
+  }
+
+  &__images-container {
+    width: 50%;
+    outline: 2px solid purple;
+  }
+}
