@@ -1,11 +1,10 @@
 .contact {
-  &__form-container {
+  &__left-article {
     width: 50%;
-    outline: 2px solid green;
+    padding: 0 3rem;
   }
 
   &__images-container {
     width: 50%;
-    outline: 2px solid purple;
   }
 }

@@ -1,0 +1,23 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  font-family: $lato;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0 0 3rem 0;
+  width: 65%;
+
+  label {
+    color: $main-color;
+    padding: 1rem 0;
+  }
+
+  input {
+    padding: 1rem;
+
+    &::placeholder {
+      color: lighten($color: $main-color, $amount: 65%);
+      text-transform: uppercase;
+    }
+  }
+}
