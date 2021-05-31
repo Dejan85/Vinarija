@@ -1,7 +1,8 @@
 import React from "react";
 import { Element } from "src/components/ui";
+import { TextareaProps } from "./types";
 
-const Textarea = (props): JSX.Element => {
+const Textarea = (props: TextareaProps): JSX.Element => {
   const {
     styles,
     labelStyles,
