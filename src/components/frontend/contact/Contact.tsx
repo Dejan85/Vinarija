@@ -8,6 +8,7 @@ import {
   Textarea,
 } from "src/components/ui";
 import RadioInputRender from "./partials/RadioInputRender";
+import ContactImage from "./partials/ContactImage";
 
 const Contact = (): JSX.Element => {
   const onSubmit = (e) => {
@@ -61,7 +62,7 @@ const Contact = (): JSX.Element => {
               />
             </Element>
             <Element as="div" className="contact__textarea">
-              <Textarea rows="10" label="poruka" placeholder="vasa poruka..." />
+              <Textarea rows={10} label="poruka" placeholder="vasa poruka..." />
             </Element>
 
             <button className="contact__submit-button" type="submit">
@@ -71,8 +72,14 @@ const Contact = (): JSX.Element => {
         </form>
       </Element>
       <Element as="article" className="contact__images-container">
-        {/* <Heading as="h2">Kontaktirajte nas</Heading> */}
-        images
+        <Element as="div" className="contact__empty-div" />
+        <ContactImage src="/images/contact/wine-1.jpg" />
+        <ContactImage src="/images/contact/wine-2.jpg" />
+        <ContactImage src="/images/contact/wine-4.jpg" />
+      </Element>
+
+      <Element as="article" className="contact__footer">
+        <Paragraph as="p">@rtanjvinarija</Paragraph>
       </Element>
     </SubContainer>
   );

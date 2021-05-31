@@ -1,16 +1,13 @@
 .contact {
   padding: 7rem 0;
+  align-items: center;
 
   &__heading {
     padding-bottom: 5rem;
   }
 
   &__left-article {
-    width: 50%;
-  }
-
-  &__images-container {
-    width: 50%;
+    width: 60%;
   }
 
   &__radio-text {
@@ -29,7 +26,7 @@
   }
 
   &__textarea {
-    width: 65%;
+    width: 65rem;
   }
 
   &__submit-button {
@@ -42,5 +39,49 @@
     text-transform: uppercase;
     font-size: 1.6rem;
     font-family: $lato;
+  }
+
+  &__images-container {
+    display: flex;
+    width: 50%;
+    height: 55rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &__image-container {
+    display: flex;
+    position: relative;
+    padding: 0.5rem;
+  }
+
+  &__empty-div {
+    display: inline-block;
+    width: 27rem;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+
+    p {
+      font-size: 2.2rem;
+      font-weight: 700;
+      font-family: $lato;
+      transform: rotate(+90deg);
+      /* Safari */
+      -webkit-transform: rotate(+90deg);
+
+      /* Firefox */
+      -moz-transform: rotate(+90deg);
+
+      /* IE */
+      -ms-transform: rotate(+90deg);
+
+      /* Opera */
+      -o-transform: rotate(+90deg);
+    }
   }
 }
