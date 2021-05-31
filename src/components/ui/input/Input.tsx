@@ -2,20 +2,12 @@ import React from "react";
 import { Element } from "src/components/ui";
 
 const Input = (props): JSX.Element => {
-  const {
-    placeholder,
-    label,
-    onChange,
-    name,
-    type,
-    style,
-    labelPadding,
-    value,
-  } = props;
+  const { placeholder, label, onChange, name, type, style, value, labelStyle } =
+    props;
   return (
     <Element as="div" className="input" style={style}>
       {label && (
-        <label style={{ paddingLeft: labelPadding }} htmlFor={label}>
+        <label style={labelStyle} htmlFor={label}>
           {label}
         </label>
       )}

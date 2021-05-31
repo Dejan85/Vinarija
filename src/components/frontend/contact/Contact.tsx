@@ -6,7 +6,7 @@ import {
   Input,
   Paragraph,
 } from "src/components/ui";
-import { inputStyle } from "./constants";
+import RadioInputRender from "./partials/RadioInputRender";
 
 const Contact = (): JSX.Element => {
   return (
@@ -33,33 +33,25 @@ const Contact = (): JSX.Element => {
             Vi ste?
           </Paragraph>
           <Element as="div" className="contact__radio-container">
-            <Input
-              placeholder="ime@email.com"
+            <RadioInputRender
               label="trgovac na malo"
               name="email"
               type="radio"
               value="kupac"
-              style={inputStyle}
-              labelPadding="1rem"
             />
 
-            <Input
-              placeholder="ime@email.com"
+            <RadioInputRender
               label="trgovac na veliko"
               name="email"
               type="radio"
               value="kupac"
-              style={inputStyle}
-              labelPadding="1rem"
             />
-            <Input
-              placeholder="ime@email.com"
+
+            <RadioInputRender
               label="kupac"
               name="email"
               type="radio"
               value="kupac"
-              style={inputStyle}
-              labelPadding="1rem"
             />
           </Element>
         </Element>

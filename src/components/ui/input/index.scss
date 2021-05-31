@@ -16,7 +16,7 @@
     padding: 1rem;
 
     &::placeholder {
-      color: lighten($color: $main-color, $amount: 65%);
+      color: lighten($main-color, $amount: 65%);
       text-transform: uppercase;
     }
   }
