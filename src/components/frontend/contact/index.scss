@@ -1,10 +1,35 @@
 .contact {
+  padding: 10rem 0;
+
+  &__heading {
+    padding-bottom: 5rem;
+  }
+
   &__left-article {
     width: 50%;
-    padding: 0 3rem;
   }
 
   &__images-container {
     width: 50%;
+  }
+
+  &__form {
+    // flex-direction: column;
+    // justify-content: flex-start;
+  }
+
+  &__radio-text {
+    justify-self: flex-start;
+    text-align: left;
+    font-family: $lato;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+  }
+
+  &__radio-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60rem;
   }
 }

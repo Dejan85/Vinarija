@@ -1,11 +1,20 @@
 import React from "react";
-import { SubContainer, Element, Heading, Input } from "src/components/ui";
+import {
+  SubContainer,
+  Element,
+  Heading,
+  Input,
+  Paragraph,
+} from "src/components/ui";
+import { inputStyle } from "./constants";
 
 const Contact = (): JSX.Element => {
   return (
     <SubContainer as="section" className="contact">
       <Element as="article" className="contact__left-article">
-        <Heading as="h2">Kontaktirajte nas</Heading>
+        <Heading className="contact__heading" as="h2">
+          Kontaktirajte nas
+        </Heading>
         <Element as="div" className="contact__form">
           <Input
             placeholder="Ime i Prezime"
@@ -19,6 +28,40 @@ const Contact = (): JSX.Element => {
             name="email"
             type="email"
           />
+
+          <Paragraph className="contact__radio-text" as="p">
+            Vi ste?
+          </Paragraph>
+          <Element as="div" className="contact__radio-container">
+            <Input
+              placeholder="ime@email.com"
+              label="trgovac na malo"
+              name="email"
+              type="radio"
+              value="kupac"
+              style={inputStyle}
+              labelPadding="1rem"
+            />
+
+            <Input
+              placeholder="ime@email.com"
+              label="trgovac na veliko"
+              name="email"
+              type="radio"
+              value="kupac"
+              style={inputStyle}
+              labelPadding="1rem"
+            />
+            <Input
+              placeholder="ime@email.com"
+              label="kupac"
+              name="email"
+              type="radio"
+              value="kupac"
+              style={inputStyle}
+              labelPadding="1rem"
+            />
+          </Element>
         </Element>
       </Element>
       <Element as="article" className="contact__images-container">
