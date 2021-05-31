@@ -1,5 +1,5 @@
 .contact {
-  padding: 10rem 0;
+  padding: 7rem 0;
 
   &__heading {
     padding-bottom: 5rem;
@@ -11,11 +11,6 @@
 
   &__images-container {
     width: 50%;
-  }
-
-  &__form {
-    // flex-direction: column;
-    // justify-content: flex-start;
   }
 
   &__radio-text {
@@ -31,5 +26,21 @@
     display: flex;
     justify-content: space-between;
     width: 60rem;
+  }
+
+  &__textarea {
+    width: 65%;
+  }
+
+  &__submit-button {
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 30rem;
+    background: none;
+    border: 1px solid $main-color;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: $lato;
   }
 }

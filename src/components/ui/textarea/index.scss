@@ -1,0 +1,23 @@
+.textarea {
+  display: flex;
+  flex-direction: column;
+  font-family: $lato;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0 0 3rem 0;
+  width: 100%;
+
+  label {
+    color: $main-color;
+    padding-bottom: 1.5rem;
+  }
+
+  textarea {
+    padding: 1rem;
+
+    &::placeholder {
+      color: lighten($main-color, $amount: 65%);
+      text-transform: uppercase;
+    }
+  }
+}
