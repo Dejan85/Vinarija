@@ -14,6 +14,7 @@ const Vina = (props): JSX.Element => {
 export const getStaticProps = () => {
   const allContent = getAllContent("wine");
   const allWines = getAllWines("all-wines");
+
   return {
     props: { allContent, allWines },
   };

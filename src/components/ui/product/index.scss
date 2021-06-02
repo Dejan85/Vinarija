@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: $main-color;
 
   &__image {
     filter: drop-shadow(10px 10px 5px #0003);

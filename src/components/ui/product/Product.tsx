@@ -1,11 +1,13 @@
 import React from "react";
-import { Image, Paragraph, Element } from "src/components/ui";
+import { Image, Paragraph, Link } from "src/components/ui";
 import { ProductProps } from "./types";
 
 const Product = (props: ProductProps): JSX.Element => {
   const { image, heading } = props;
+  const slug = heading.replace(/\s/g, "").toLocaleLowerCase();
+
   return (
-    <Element as="div" className="product">
+    <Link href={`/vina/${slug}`} className="product">
       {image && (
         <Image
           className="product__image"
@@ -19,7 +21,7 @@ const Product = (props: ProductProps): JSX.Element => {
       <Paragraph as="p" className="product__heading">
         {heading}
       </Paragraph>
-    </Element>
+    </Link>
   );
 };
 
