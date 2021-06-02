@@ -10,3 +10,4 @@ export { Wines } from "./wines";
 export { Shop } from "./shop";
 export { Contact } from "./contact";
 export { Footer } from "./footer";
+export { WineDetail } from "./wine-detail";

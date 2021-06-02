@@ -1,0 +1,79 @@
+.wine-detail {
+  flex-direction: column;
+
+  &__image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70rem;
+  }
+
+  &__heading {
+    color: white;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 38rem;
+    padding: 20rem 0 10rem 0;
+  }
+
+  &__content-left-text {
+    text-align: right;
+    font-size: 1.9rem;
+    font-family: $lato;
+
+    &:nth-of-type(1) {
+      padding: 3rem 0;
+    }
+  }
+
+  &__content-left-link {
+    text-align: right;
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    font-family: $lato;
+    text-decoration: none;
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+    width: 10rem;
+    padding-bottom: 0.3rem;
+    text-transform: uppercase;
+  }
+
+  &__content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70rem;
+    padding: 10rem 0;
+  }
+
+  &__content-right-text {
+    font-size: 1.9rem;
+    font-family: $lato;
+    padding-top: 3rem;
+    text-align: left;
+  }
+
+  &__content-right-link {
+    text-align: center;
+    margin: 5rem 0 8rem 0;
+    font-size: 1.6rem;
+    font-family: $lato;
+    text-decoration: none;
+    color: $main-color;
+    border: 2px solid $main-color;
+    padding: 1rem 5rem;
+    text-transform: uppercase;
+  }
+}

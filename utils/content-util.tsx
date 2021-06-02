@@ -44,10 +44,10 @@ export const getAllWines = (dir) => {
   return allWines;
 };
 
-export async function getData(dir) {
-  const filePath = path.join(process.cwd(), `content/home/homeAbout.json`);
+export async function getWine(id) {
+  const filePath = path.join(process.cwd(), `content/all-wines/allWines.json`);
   const jsonData = await promises.readFile(filePath);
   const data = JSON.parse(jsonData.toString());
-
-  return data;
+  const wine = data.filter((wine) => wine.id === id);
+  return wine[0];
 }

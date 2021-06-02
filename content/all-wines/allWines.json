@@ -1,38 +1,92 @@
 [
     {
+        "id": "chardonnay",
         "name": "Chardonnay",
         "image": "/images/home/products/wine-11.webp",
+        "imageBackground": "/images/wine-detail/test.jpg",
+        "detailImage": "/images/wine-detail/test2.jpg",
+        "detailImage2": "/images/wine-detail/test3.jpg",
         "price": "$15.99",
-        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
+        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
+        "detailDescription": [
+            "A ripe and robust Cabernet Sauvignon that charms with layers of mocha, fresh berries, blackcurrant and subtle black pepper, toasted oak and rich vanilla. Round and luscious with a hint of spice, soft tannins weave into a smooth and lingering finish.",
+            "Good together with the people & places you love.",
+            "Also goes well with grilled ribeye, blue cheese burgers and the satisfying smack of a well-deserved high five."
+        ]
     },
     {
+        "id": "sauvignonblanc",
         "name": "Sauvignon Blanc",
         "image": "/images/home/products/wine-12.webp",
+        "imageBackground": "/images/wine-detail/test.jpg",
+        "detailImage": "/images/wine-detail/test2.jpg",
+        "detailImage2": "/images/wine-detail/test3.jpg",
         "price": "$15.99",
-        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
+        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
+        "detailDescription": [
+            "A ripe and robust Cabernet Sauvignon that charms with layers of mocha, fresh berries, blackcurrant and subtle black pepper, toasted oak and rich vanilla. Round and luscious with a hint of spice, soft tannins weave into a smooth and lingering finish.",
+            "Good together with the people & places you love.",
+            "Also goes well with grilled ribeye, blue cheese burgers and the satisfying smack of a well-deserved high five."
+        ]
     },
     {
+        "id": "cabernetsauvignon",
         "name": "Cabernet Sauvignon",
         "image": "/images/home/products/wine-13.webp",
+        "imageBackground": "/images/wine-detail/test.jpg",
+        "detailImage": "/images/wine-detail/test2.jpg",
+        "detailImage2": "/images/wine-detail/test3.jpg",
         "price": "$15.99",
-        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
+        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
+        "detailDescription": [
+            "A ripe and robust Cabernet Sauvignon that charms with layers of mocha, fresh berries, blackcurrant and subtle black pepper, toasted oak and rich vanilla. Round and luscious with a hint of spice, soft tannins weave into a smooth and lingering finish.",
+            "Good together with the people & places you love.",
+            "Also goes well with grilled ribeye, blue cheese burgers and the satisfying smack of a well-deserved high five."
+        ]
     },
     {
+        "id": "merlot",
         "name": "Merlot",
         "image": "/images/home/products/wine-14.webp",
+        "imageBackground": "/images/wine-detail/test.jpg",
+        "detailImage": "/images/wine-detail/test2.jpg",
+        "detailImage2": "/images/wine-detail/test3.jpg",
         "price": "$15.99",
-        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
+        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
+        "detailDescription": [
+            "A ripe and robust Cabernet Sauvignon that charms with layers of mocha, fresh berries, blackcurrant and subtle black pepper, toasted oak and rich vanilla. Round and luscious with a hint of spice, soft tannins weave into a smooth and lingering finish.",
+            "Good together with the people & places you love.",
+            "Also goes well with grilled ribeye, blue cheese burgers and the satisfying smack of a well-deserved high five."
+        ]
     },
     {
+        "id": "pinotnoir",
         "name": "Pinot Noir",
         "image": "/images/home/products/wine-15.webp",
+        "imageBackground": "/images/wine-detail/test.jpg",
+        "detailImage": "/images/wine-detail/test2.jpg",
+        "detailImage2": "/images/wine-detail/test3.jpg",
         "price": "$15.99",
-        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
+        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
+        "detailDescription": [
+            "A ripe and robust Cabernet Sauvignon that charms with layers of mocha, fresh berries, blackcurrant and subtle black pepper, toasted oak and rich vanilla. Round and luscious with a hint of spice, soft tannins weave into a smooth and lingering finish.",
+            "Good together with the people & places you love.",
+            "Also goes well with grilled ribeye, blue cheese burgers and the satisfying smack of a well-deserved high five."
+        ]
     },
     {
+        "id": "rose",
         "name": "Rose",
         "image": "/images/home/products/wine-16.webp",
+        "imageBackground": "/images/wine-detail/test.jpg",
+        "detailImage": "/images/wine-detail/test2.jpg",
+        "detailImage2": "/images/wine-detail/test3.jpg",
         "price": "$15.99",
-        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ"
+        "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
+        "detailDescription": [
+            "A ripe and robust Cabernet Sauvignon that charms with layers of mocha, fresh berries, blackcurrant and subtle black pepper, toasted oak and rich vanilla. Round and luscious with a hint of spice, soft tannins weave into a smooth and lingering finish.",
+            "Good together with the people & places you love.",
+            "Also goes well with grilled ribeye, blue cheese burgers and the satisfying smack of a well-deserved high five."
+        ]
     }
 ]
