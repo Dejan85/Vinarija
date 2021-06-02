@@ -2,7 +2,7 @@ import React from "react";
 import { Element, Paragraph, Link, Image } from "src/components/ui";
 
 const ShopProductCard = (props): JSX.Element => {
-  const { image = "/", buttonText, price, wineDescription } = props;
+  const { image = "/", buttonText, price, wineDescription, name } = props;
   return (
     <Element as="article" className="shop-product-card">
       <Element as="div" className="shop-product-card__image-container">
@@ -22,7 +22,7 @@ const ShopProductCard = (props): JSX.Element => {
       <Paragraph className="shop-product-card__price" as="span">
         {price}
       </Paragraph>
-      <Link className="shop-product-card__link" href="/">
+      <Link className="shop-product-card__link" href={`/prodavnica/${name}`}>
         {buttonText}
       </Link>
     </Element>

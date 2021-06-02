@@ -25,13 +25,14 @@ const Shop = (props: ShopProps): JSX.Element => {
       </Heading>
 
       <Element as="section" className="shop__products-container">
-        {data.map(({ image, price, wineDescription }, index) => (
+        {data.map(({ image, price, wineDescription, id }, index) => (
           <ShopProductCard
             key={index}
             buttonText={buttonText}
             image={image}
             price={price}
             wineDescription={wineDescription}
+            name={id}
           />
         ))}
       </Element>
