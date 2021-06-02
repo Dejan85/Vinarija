@@ -1,14 +1,13 @@
 import React from "react";
 import { getWine } from "utils/content-util";
+import { ShopDetail } from "src/components/frontend";
 
-const ShopDetail = (props): JSX.Element => {
+const ShopDetailPage = (props): JSX.Element => {
   const { wine } = props;
-  console.log("test", wine);
-
-  return <div>ShopDetail</div>;
+  return <ShopDetail wine={wine} />;
 };
 
-export default ShopDetail;
+export default ShopDetailPage;
 
 export async function getStaticProps(context) {
   const id = context.params.id;

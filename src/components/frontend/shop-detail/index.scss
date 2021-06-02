@@ -1,2 +1,85 @@
 .shop-detail {
+  padding: 10rem 0;
+
+  &__image-container {
+    position: relative;
+    width: 35rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90rem;
+  }
+
+  &__content-heading {
+    font-size: 4rem;
+  }
+
+  &__content-price {
+    padding-top: 1.5rem;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+    width: 27rem;
+  }
+
+  &__content-wine-sum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $main-color;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+  }
+
+  &__content-button {
+    background: none;
+    text-transform: uppercase;
+    border: 2px solid $main-color;
+    height: 4rem;
+    padding: 0 5rem;
+    cursor: pointer;
+  }
+
+  &__content-description {
+    text-align: left;
+    color: $main-color;
+  }
+
+  &__content-specification-heading {
+    padding: 4rem 0 2rem 0;
+  }
+
+  &__content-specification-text-container {
+    display: flex;
+  }
+
+  &__content-specification-text {
+    padding-bottom: 1.5rem;
+    width: 15rem;
+    text-align: left;
+  }
+
+  &__content-specification-text-span {
+    text-transform: capitalize;
+  }
+
+  &__content-wine-profile-text {
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+  }
+
+  &__content-wine-profile-span {
+    padding-bottom: 1.5rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
 }
