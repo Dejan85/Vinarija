@@ -42,7 +42,11 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
           {price}
         </Paragraph>
         <Element as="div" className="shop-detail__button-container">
-          <input className="shop-detail__content-wine-sum" value="1" />
+          <input
+            className="shop-detail__content-wine-sum"
+            value="1"
+            onChange={() => {}}
+          />
           <button className="shop-detail__content-button">Dodaj u korpu</button>
         </Element>
         <Paragraph as="p" className="shop-detail__content-description">
@@ -52,7 +56,7 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
           SPECIFIKACIJE
         </Heading>
         <Element
-          as="p"
+          as="div"
           className="shop-detail__content-specification-text-container"
         >
           <Paragraph as="p" className="shop-detail__content-specification-text">
@@ -67,7 +71,7 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
         </Element>
 
         <Element
-          as="p"
+          as="div"
           className="shop-detail__content-specification-text-container"
         >
           <Paragraph as="p" className="shop-detail__content-specification-text">
@@ -82,7 +86,7 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
         </Element>
 
         <Element
-          as="p"
+          as="div"
           className="shop-detail__content-specification-text-container"
         >
           <Paragraph as="p" className="shop-detail__content-specification-text">

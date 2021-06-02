@@ -9,7 +9,7 @@ export interface ShopDetailProps {
     detailImage: string;
     detailImage2: string;
     detailDescription: string[];
-    specification: string[];
+    specification: { berba: string; sorta: string; alkohol: string };
     wineProfile: string[];
   };
 }
