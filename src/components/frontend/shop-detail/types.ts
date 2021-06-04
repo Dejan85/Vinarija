@@ -4,6 +4,7 @@ export interface ShopDetailProps {
     name: string;
     image: string;
     price: string;
+    volume: string;
     wineDescription: string;
     imageBackground: string;
     detailImage: string;

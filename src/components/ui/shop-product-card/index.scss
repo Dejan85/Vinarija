@@ -9,19 +9,31 @@
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 2rem 0;
+    margin: 2rem 0;
   }
 
   &__text {
-    padding-bottom: 2rem;
+    margin: 2rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #363636;
   }
 
   &__price {
-    padding-bottom: 2rem;
+    margin: 2rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+  }
+
+  &__volume {
+    font-size: 1.7rem;
   }
 
   &__link {
-    padding: 1rem 3rem;
+    margin-top: 2rem;
+    display: inline-flex;
+    padding: 1rem 4rem;
     text-decoration: none;
     font-size: 2em;
     font-family: $lato;
