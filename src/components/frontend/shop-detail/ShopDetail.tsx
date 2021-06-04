@@ -10,12 +10,14 @@ import {
 } from "src/components/ui";
 import Image from "next/image";
 import { ShopDetailProps } from "./types";
+import { FaPlus, FaMinus } from 'react-icons/fa';
 
 const ShopDetail = (props: ShopDetailProps): JSX.Element => {
   const {
     wine: {
       wineDescription,
       price,
+      volume,
       detailDescription,
       specification: { berba, sorta, alkohol },
       wineProfile,
@@ -38,15 +40,22 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
         <Heading as="h3" className="shop-detail__content-heading">
           {wineDescription}
         </Heading>
+        <Element as="div">
         <Paragraph as="p" className="shop-detail__content-price">
           {price}
         </Paragraph>
+        <Paragraph as="p" className="shop-detail__content-price">
+          / {volume}
+        </Paragraph>
+        </Element>
         <Element as="div" className="shop-detail__button-container">
+          <button className="shop-detail__input-button"><FaMinus /></button>
           <input
             className="shop-detail__content-wine-sum"
             value="1"
             onChange={() => {}}
           />
+          <button className="shop-detail__input-button"><FaPlus /></button>
           <button className="shop-detail__content-button">Dodaj u korpu</button>
         </Element>
         <Paragraph as="p" className="shop-detail__content-description">

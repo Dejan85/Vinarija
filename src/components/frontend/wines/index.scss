@@ -14,15 +14,18 @@
   }
 
   &__text {
-    padding-bottom: 3rem;
-    max-width: 50rem;
-    width: 100%;
-    font-size: 1.8rem;
-    color: $main-color;
+    width: 50%;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
 
-    &:nth-last-child(2) {
-      font-size: 1.6rem;
-      color: lighten($color: $main-color, $amount: 10%);
-    }
+  &__text:nth-child(2) {
+    font-weight: 600;
+  }
+
+  &__text:nth-child(3) {
+    font-weight: 400;
+    font-size: 2rem;
   }
 }

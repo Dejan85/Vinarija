@@ -23,9 +23,8 @@
 
   &__button-container {
     display: flex;
-    justify-content: space-between;
     padding: 5rem 0;
-    width: 27rem;
+    width: 43rem;
   }
 
   &__content-wine-sum {
@@ -36,6 +35,19 @@
     width: 4rem;
     height: 4rem;
     text-align: center;
+    margin: 0 1rem;
+  }
+
+  &__input-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $main-color;
+    padding: 0.9rem;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 
   &__content-button {
@@ -43,13 +55,16 @@
     text-transform: uppercase;
     border: 2px solid $main-color;
     height: 4rem;
-    padding: 0 5rem;
+    width: 20rem;
     cursor: pointer;
+    margin-left: 6rem;
   }
 
   &__content-description {
     text-align: left;
-    color: $main-color;
+    color: #363636;
+    font-size: 2.3rem;
+    line-height: 1.5;
   }
 
   &__content-specification-heading {
@@ -64,22 +79,27 @@
     padding-bottom: 1.5rem;
     width: 15rem;
     text-align: left;
+    font-weight: 700;
   }
 
   &__content-specification-text-span {
     text-transform: capitalize;
+    font-style: italic;
+
   }
 
   &__content-wine-profile-text {
     padding-bottom: 1.5rem;
     text-transform: uppercase;
-    font-size: 1.7rem;
-    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
   }
 
   &__content-wine-profile-span {
     padding-bottom: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
+    text-align: left;
+    color: #363636;
+    font-style: italic;
   }
 }
