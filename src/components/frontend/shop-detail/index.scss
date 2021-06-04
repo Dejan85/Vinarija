@@ -25,6 +25,18 @@
     display: flex;
     padding: 5rem 0;
     width: 43rem;
+
+    /* Chrome, Safari, Edge, Opera */
+    ::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
   }
 
   &__content-wine-sum {
@@ -85,7 +97,6 @@
   &__content-specification-text-span {
     text-transform: capitalize;
     font-style: italic;
-
   }
 
   &__content-wine-profile-text {

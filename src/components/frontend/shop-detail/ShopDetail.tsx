@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import {
   SubContainer,
   Heading,
@@ -10,7 +10,7 @@ import {
 } from "src/components/ui";
 import Image from "next/image";
 import { ShopDetailProps } from "./types";
-import { FaPlus, FaMinus } from 'react-icons/fa';
+import { FaPlus, FaMinus, FaArrowDown } from "react-icons/fa";
 
 const ShopDetail = (props: ShopDetailProps): JSX.Element => {
   const {
@@ -24,6 +24,28 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
       image,
     },
   } = props;
+  const [sum, setSum] = useState(1);
+
+  const cart = {
+    sum,
+    image,
+    name: wineDescription,
+    volume,
+    price,
+  };
+
+  const increaseHandler = (): void => setSum((sum) => sum + 1);
+  const decreaseHandler = (): void => sum > 1 && setSum((sum) => sum - 1);
+  const onChangeHandler = (e: { target: { value: string } }) => {
+    const value: number = e.target.value && parseInt(e.target.value);
+    if (value === 0) {
+      return setSum(value + 1);
+    }
+    setSum(value);
+  };
+  const addToCartHandler = (): void => {
+    console.log("test", cart);
+  };
 
   return (
     <SubContainer as="div" className="shop-detail">
@@ -41,22 +63,39 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
           {wineDescription}
         </Heading>
         <Element as="div">
-        <Paragraph as="p" className="shop-detail__content-price">
-          {price}
-        </Paragraph>
-        <Paragraph as="p" className="shop-detail__content-price">
-          / {volume}
-        </Paragraph>
+          <Paragraph as="p" className="shop-detail__content-price">
+            {price}
+          </Paragraph>
+          <Paragraph as="p" className="shop-detail__content-price">
+            / {volume}
+          </Paragraph>
         </Element>
         <Element as="div" className="shop-detail__button-container">
-          <button className="shop-detail__input-button"><FaMinus /></button>
+          <button
+            className="shop-detail__input-button"
+            onClick={decreaseHandler}
+          >
+            <FaMinus />
+          </button>
           <input
             className="shop-detail__content-wine-sum"
-            value="1"
-            onChange={() => {}}
+            value={sum}
+            type="number"
+            min="1"
+            onChange={onChangeHandler}
           />
-          <button className="shop-detail__input-button"><FaPlus /></button>
-          <button className="shop-detail__content-button">Dodaj u korpu</button>
+          <button
+            className="shop-detail__input-button"
+            onClick={increaseHandler}
+          >
+            <FaPlus />
+          </button>
+          <button
+            className="shop-detail__content-button"
+            onClick={addToCartHandler}
+          >
+            Dodaj u korpu
+          </button>
         </Element>
         <Paragraph as="p" className="shop-detail__content-description">
           {detailDescription[0]}
