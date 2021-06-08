@@ -13,7 +13,6 @@ import ContactImage from "./partials/ContactImage";
 const Contact = (): JSX.Element => {
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log("test", "on submit handler");
   };
   return (
     <SubContainer as="section" className="contact">
