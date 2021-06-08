@@ -66,9 +66,9 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
         <Heading as="h3" className="shop-detail__content-heading">
           {wineDescription}
         </Heading>
-        <Element as="div">
+        <Element as="div" className="shop-detail__content-price-container">
           <Paragraph as="p" className="shop-detail__content-price">
-            {price}
+            {price} RSD
           </Paragraph>
           <Paragraph as="p" className="shop-detail__content-price">
             / {volume}
