@@ -6,8 +6,8 @@
         "imageBackground": "/images/wine-detail/test.jpg",
         "detailImage": "/images/wine-detail/test2.jpg",
         "detailImage2": "/images/wine-detail/test3.jpg",
-        "price": "$15.99",
-        "volume": "750mL", 
+        "price": 15.99,
+        "volume": "750mL",
         "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
         "detailDescription": [
             "A ripe and robust Cabernet Sauvignon that charms with layers of mocha, fresh berries, blackcurrant and subtle black pepper, toasted oak and rich vanilla. Round and luscious with a hint of spice, soft tannins weave into a smooth and lingering finish.",
@@ -32,7 +32,7 @@
         "imageBackground": "/images/wine-detail/test.jpg",
         "detailImage": "/images/wine-detail/test2.jpg",
         "detailImage2": "/images/wine-detail/test3.jpg",
-        "price": "$15.99",
+        "price": 15.99,
         "volume": "750mL",
         "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
         "detailDescription": [
@@ -58,7 +58,7 @@
         "imageBackground": "/images/wine-detail/test.jpg",
         "detailImage": "/images/wine-detail/test2.jpg",
         "detailImage2": "/images/wine-detail/test3.jpg",
-        "price": "$15.99",
+        "price": 15.99,
         "volume": "750mL",
         "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
         "detailDescription": [
@@ -84,7 +84,7 @@
         "imageBackground": "/images/wine-detail/test.jpg",
         "detailImage": "/images/wine-detail/test2.jpg",
         "detailImage2": "/images/wine-detail/test3.jpg",
-        "price": "$15.99",
+        "price": 15.99,
         "volume": "750mL",
         "wineDescription": "2019 BREAD & BUTTER CALIFORNIA CHARDONNAY",
         "detailDescription": [
@@ -110,7 +110,7 @@
         "imageBackground": "/images/wine-detail/test.jpg",
         "detailImage": "/images/wine-detail/test2.jpg",
         "detailImage2": "/images/wine-detail/test3.jpg",
-        "price": "$15.99",
+        "price": 15.99,
         "volume": "750mL",
         "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
         "detailDescription": [
@@ -136,7 +136,7 @@
         "imageBackground": "/images/wine-detail/test.jpg",
         "detailImage": "/images/wine-detail/test2.jpg",
         "detailImage2": "/images/wine-detail/test3.jpg",
-        "price": "$15.99",
+        "price": 15.99,
         "volume": "750mL",
         "wineDescription": "2020 BREAD & BUTTER CALIFORNIA ROSÉ",
         "detailDescription": [

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   SubContainer,
   Heading,
@@ -11,8 +11,10 @@ import {
 import Image from "next/image";
 import { ShopDetailProps } from "./types";
 import { FaPlus, FaMinus, FaArrowDown } from "react-icons/fa";
+import { ShoppingCartContext } from "src/contexts/shoppingCart/ShoppingCartContext";
 
 const ShopDetail = (props: ShopDetailProps): JSX.Element => {
+  const { addProductToCart } = useContext(ShoppingCartContext);
   const {
     wine: {
       wineDescription,
@@ -22,11 +24,13 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
       specification: { berba, sorta, alkohol },
       wineProfile,
       image,
+      id,
     },
   } = props;
   const [sum, setSum] = useState(1);
 
-  const cart = {
+  const newCart = {
+    id,
     sum,
     image,
     name: wineDescription,
@@ -44,7 +48,7 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
     setSum(value);
   };
   const addToCartHandler = (): void => {
-    console.log("test", cart);
+    addProductToCart(newCart);
   };
 
   return (

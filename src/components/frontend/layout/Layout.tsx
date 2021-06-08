@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Header, Footer, Navigation } from "src/components/frontend";
 import { Element } from "src/components/ui";
 import { NavProvider } from "src/contexts/navigation/NavContext";
+import { ShoppingCartProvider } from "src/contexts/shoppingCart/ShoppingCartContext";
 
 const Layout = ({
   children,
@@ -40,7 +41,7 @@ const Layout = ({
         <Navigation />
       </NavProvider>
 
-      {children}
+      <ShoppingCartProvider>{children}</ShoppingCartProvider>
       <Footer />
     </Element>
   );
