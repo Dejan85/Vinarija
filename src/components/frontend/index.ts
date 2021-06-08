@@ -12,3 +12,4 @@ export { Contact } from "./contact";
 export { Footer } from "./footer";
 export { WineDetail } from "./wine-detail";
 export { ShopDetail } from "./shop-detail";
+export { Cart } from "./cart";

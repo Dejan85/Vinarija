@@ -3,7 +3,7 @@ import { Image, Link } from "src/components/ui";
 
 const Shop = (): JSX.Element => {
   return (
-    <Link href="/shop">
+    <Link href="/korpa">
       <Image
         src="/icons/shop/shop.svg"
         alt="img"
