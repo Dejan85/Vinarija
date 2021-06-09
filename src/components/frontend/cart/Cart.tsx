@@ -2,6 +2,10 @@ import React from "react";
 import { SubContainer, Element, Heading, Paragraph } from "src/components/ui";
 
 const Cart = (): JSX.Element => {
+  const test = window && localStorage.getItem("cart");
+
+  console.log("test", JSON.parse(test));
+
   return (
     <SubContainer className="cart" as="div">
       <Element as="div" className="cart__heading-container">

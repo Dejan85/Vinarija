@@ -1,13 +1,17 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 const ShoppingCartContext = createContext(null);
 
 const ShoppingCartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
+  console.log("test cart", cart);
+
   const addProductToCart = (product) => {
     const { sum, id }: { sum: number; id: string } = product;
     const set = new Set();
+    var d = new Date();
+    var hour = d.getHours();
 
     if (cart.length) {
       const newCart = [...cart, { ...product }];
@@ -28,8 +32,23 @@ const ShoppingCartProvider = ({ children }) => {
       return setCart(filteredArr);
     }
 
-    setCart([...cart, { ...product }]);
+    setCart([{ hour }, ...cart, { ...product }]);
   };
+
+  useEffect(() => {
+    if (cart.length) {
+      const stringifyCart = JSON.stringify(cart);
+      localStorage.setItem("cart", stringifyCart);
+    }
+  }, [cart]);
+
+  useEffect(() => {
+    const cart = localStorage.getItem("cart");
+    if (cart) {
+      const stringifyCart = JSON.parse(cart);
+      setCart(stringifyCart);
+    }
+  }, []);
 
   return (
     <ShoppingCartContext.Provider
