@@ -11,3 +11,4 @@ export { Product } from "./product";
 export { ShopProductCard } from "./shop-product-card";
 export { Input } from "./input";
 export { Textarea } from "./textarea";
+export { Table } from "./table";
