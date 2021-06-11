@@ -35,8 +35,8 @@
 
   &__body {
     display: flex;
-    margin-top: 3rem;
-    padding: 1rem 1rem 3rem 1rem;
+    margin-top: 2rem;
+    padding: 1rem 0rem 2rem 1rem;
     border-bottom: 1.5px solid rgb(226, 221, 221);
   }
 
@@ -81,9 +81,55 @@
       width: 5.3rem;
       padding: 0.5rem 0;
       border-bottom: 1px solid $main-color;
-      // height: 4rem;
-      // text-align: center;
+      cursor: pointer;
       font-size: 1.4rem;
+      font-family: $lato;
+    }
+  }
+
+  &__body-article {
+    display: flex;
+    width: 60rem;
+
+    &--content {
+      P {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        text-align: left;
+
+        &:nth-of-type(2) {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &__body-availability {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    width: 60rem;
+
+    &--container {
+      display: flex;
+      align-items: flex-start;
+      width: 8rem;
+    }
+
+    p {
+      font-size: 1.7rem;
+      font-family: $lato;
+    }
+  }
+
+  &__body-price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20rem;
+
+    p {
+      font-size: 1.7rem;
       font-family: $lato;
     }
   }

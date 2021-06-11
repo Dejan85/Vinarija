@@ -1,5 +1,6 @@
 import React from "react";
 import { Element, Heading, Paragraph, Input } from "src/components/ui";
+import Image from "next/image";
 
 const Body = (props): JSX.Element => {
   const { cart, onChange } = props;
@@ -21,6 +22,35 @@ const Body = (props): JSX.Element => {
                 />
                 <button className="table__body-sum--button">UPDATE</button>
               </Element>
+            </Element>
+
+            <Element as="div" className="table__body-article">
+              <Element
+                as="div"
+                className="table__body-article--image-container"
+              >
+                <Image
+                  className="table__body-article--image"
+                  src={image}
+                  width="50"
+                  height="80"
+                />
+              </Element>
+              <Element as="div" className="table__body-article--content">
+                <Paragraph as="p">{name}</Paragraph>
+                <Paragraph as="p">{volume}</Paragraph>
+                <button className="table__body-sum--button">REMOVE</button>
+              </Element>
+            </Element>
+
+            <Element as="div" className="table__body-availability">
+              <Element as="div" className="table__body-availability--container">
+                <Paragraph as="p">Na lageru</Paragraph>
+              </Element>
+            </Element>
+
+            <Element as="div" className="table__body-price">
+              <Paragraph as="p">{price} RSD</Paragraph>
             </Element>
           </Element>
         );
