@@ -4,6 +4,7 @@ const ShoppingCartContext = createContext(null);
 
 const ShoppingCartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [bill, setBill] = useState(0);
 
   const addProductToCart = (product) => {
     const { sum, id }: { sum: number; id: string } = product;
@@ -37,6 +38,15 @@ const ShoppingCartProvider = ({ children }) => {
     if (cart.length) {
       const stringifyCart = JSON.stringify(cart);
       localStorage.setItem("cart", stringifyCart);
+
+      let bill = 0;
+      const filteredCart = cart.filter((item) => !item.hour);
+
+      filteredCart.forEach((item, index, arr) => {
+        bill = bill + item.price;
+      });
+
+      setBill(bill);
     }
   }, [cart]);
 
@@ -54,6 +64,7 @@ const ShoppingCartProvider = ({ children }) => {
         setCart,
         cart,
         addProductToCart,
+        bill,
       }}
     >
       {children}

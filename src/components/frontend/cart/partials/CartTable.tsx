@@ -4,7 +4,7 @@ import { Element, Heading, Paragraph, Table } from "src/components/ui";
 const CartTable = (props): JSX.Element => {
   const { cart } = props;
 
-  console.log("test", cart);
+  // console.log("test", cart);
 
   const onChange = () => {};
 
