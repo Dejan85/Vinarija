@@ -7,7 +7,7 @@ const Product = (props: ProductProps): JSX.Element => {
   const slug = heading.replace(/\s/g, "").toLocaleLowerCase();
 
   return (
-    <Link href={`/vina/${slug}`} className="product">
+    <Link href={`/prodavnica/${slug}`} className="product">
       {image && (
         <Image
           className="product__image"

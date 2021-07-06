@@ -13,9 +13,15 @@ const Textarea = (props: TextareaProps): JSX.Element => {
     cols,
     placeholder,
     name,
+    className,
   } = props;
+
   return (
-    <Element as="div" className="textarea" style={styles}>
+    <Element
+      as="div"
+      className={className ? `${className} textarea` : "textarea"}
+      style={styles}
+    >
       {label && (
         <label style={labelStyles} htmlFor={label}>
           {label}

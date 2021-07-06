@@ -8,4 +8,5 @@ export interface TextareaProps {
   cols?: number;
   placeholder?: string;
   name?: string;
+  className?: string;
 }

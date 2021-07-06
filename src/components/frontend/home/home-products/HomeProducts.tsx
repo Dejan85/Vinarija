@@ -16,7 +16,7 @@ const HomeProducts = (props): JSX.Element => {
           <Product key={index} heading={name} image={image} />
         ))}
       </SubContainer>
-      <Link href="/" className="products__link">
+      <Link href="/prodavnica" className="products__link">
         {buttonText}
       </Link>
     </>

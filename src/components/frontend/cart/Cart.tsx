@@ -17,7 +17,7 @@ const Cart = (): JSX.Element => {
       </Element>
       {cart.length && <CartTable cart={cart} />}
       <Element as="div" className="cart__footer">
-        <Element as="div" className="cart__coupon">
+        {/* <Element as="div" className="cart__coupon">
           <Paragraph as="p" className="cart__coupon-heading">
             Imate Kupon?
           </Paragraph>
@@ -25,7 +25,7 @@ const Cart = (): JSX.Element => {
             <input className="cart__coupon-input" />
             <button className="cart__coupon-button">PRIMENI</button>
           </Element>
-        </Element>
+        </Element> */}
 
         <Element as="div" className="cart__sum-price">
           <Element as="div" className="cart__sum-price-container">
