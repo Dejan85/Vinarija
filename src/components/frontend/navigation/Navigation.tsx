@@ -30,13 +30,13 @@ const Navigation = (): JSX.Element => {
           Naslovna
         </Link.ActiveLink>
 
-        <Link.ActiveLink
+        {/* <Link.ActiveLink
           href="/vina"
           className="navigation__col__nav-links"
           setToggleNav={closeNav}
         >
           Vina
-        </Link.ActiveLink>
+        </Link.ActiveLink> */}
 
         <Link.ActiveLink
           href="/vinogradi"
