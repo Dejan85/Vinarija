@@ -3,18 +3,38 @@
   align-items: center;
 
   &__heading {
-    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    letter-spacing: 2px;
   }
 
   &__left-article {
-    width: 60%;
+    width: 80%;
+  }
+
+  &__form label {
+    font-size: 2rem;
+  }
+
+  &__form input {
+    outline: none;
+    border: 1px solid #0008;
+    border-radius: 3px;
+
+    &:focus {
+      border: 1px solid #000;
+      box-shadow: 2px 2px 4px #0003;
+    }
+  }
+
+  &__radio-container {
+    align-items: center;
   }
 
   &__radio-text {
     justify-self: flex-start;
     text-align: left;
     font-family: $lato;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     padding-bottom: 1.5rem;
   }
@@ -22,7 +42,7 @@
   &__radio-container {
     display: flex;
     justify-content: space-between;
-    width: 60rem;
+    width: 80rem;
   }
 
   &__textarea {
@@ -52,7 +72,7 @@
   &__image-container {
     display: flex;
     position: relative;
-    padding: 0.5rem;
+    margin: 1rem;
   }
 
   &__empty-div {

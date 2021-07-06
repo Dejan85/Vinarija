@@ -57,8 +57,8 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
         <Image
           src={image}
           alt="img"
-          width="350"
-          height="450"
+          width="400"
+          height="850"
           objectFit="cover"
         />
       </Element>
@@ -70,7 +70,7 @@ const ShopDetail = (props: ShopDetailProps): JSX.Element => {
           <Paragraph as="p" className="shop-detail__content-price">
             {price} RSD
           </Paragraph>
-          <Paragraph as="p" className="shop-detail__content-price">
+          <Paragraph as="p" className="shop-detail__content-volume">
             / {volume}
           </Paragraph>
         </Element>

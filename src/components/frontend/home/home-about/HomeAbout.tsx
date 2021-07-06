@@ -1,22 +1,31 @@
 import React from "react";
-import { SubContainer, Heading, Paragraph } from "src/components/ui";
+import { SubContainer, Heading, Paragraph, Element } from "src/components/ui";
+import LightSpeed from "react-reveal/LightSpeed";
+import Slide from "react-reveal/Slide";
 
-const HomeAbout = (props): JSX.Element => {
-  const {
-    homeAbout: {
-      data: { heading, text },
-    },
-  } = props;
-
+const HomeAbout = (): JSX.Element => {
   return (
-    <SubContainer as="section" className="home-about">
-      <Heading as="h2">{heading}</Heading>
-      {text.map((text, item) => (
-        <Paragraph key={item} as="p" className="home-about__text">
-          {text}
-        </Paragraph>
-      ))}
-    </SubContainer>
+    <Element as="section" className="home-about">
+      <Paragraph as="p" className="home-about__subheading">
+        Upoznajte nas
+      </Paragraph>
+      <Heading as="h1" className="home-about__heading">
+        Nasa prica
+      </Heading>
+      <Paragraph as="p" className="home-about__text one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        temporibus mollitia sequi iusto! Dolorem expedita eligendi corrupti
+        aliquid minima consectetur nostrum cum nobis debitis fugiat alias sed,
+        ad similique esse, voluptatum illum iure ratione error?
+      </Paragraph>
+      <Paragraph as="p" className="home-about__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta
+        voluptatum nostrum eaque quos totam? Velit odit repudiandae animi
+        facilis harum, blanditiis veritatis aliquam maiores rem ratione
+        consequatur ab labore necessitatibus earum inventore accusantium
+        repellat voluptatem a provident in enim.
+      </Paragraph>
+    </Element>
   );
 };
 

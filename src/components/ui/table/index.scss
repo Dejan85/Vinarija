@@ -1,6 +1,6 @@
 .table {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 7rem;
   flex-direction: column;
 
   &__heading {
@@ -113,11 +113,10 @@
     &--container {
       display: flex;
       align-items: flex-start;
-      width: 8rem;
     }
 
     p {
-      font-size: 1.7rem;
+      font-size: 2rem;
       font-family: $lato;
     }
   }

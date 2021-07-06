@@ -1,5 +1,11 @@
-import React from "react";
-import { SubContainer, Button, Heading, Image } from "src/components/ui";
+import React, { useEffect } from "react";
+import {
+  SubContainer,
+  Element,
+  Button,
+  Heading,
+  Image,
+} from "src/components/ui";
 
 const WelcomePage = (props): JSX.Element => {
   const {
@@ -7,20 +13,22 @@ const WelcomePage = (props): JSX.Element => {
       data: { heading, image, buttonText },
     },
   } = props;
+
   return (
-    <SubContainer className="welcome-page" as="section">
-      <Image
-        src={image}
-        alt="image"
-        className="welcome-page__background-image"
-        layout="fill"
-        objectFit="cover"
-      />
-      <Heading className="welcome-page__heading" as="h1">
-        {heading}
-      </Heading>
-      <Button as="a">{buttonText}</Button>
-    </SubContainer>
+    <Element as="section" className="welcome-page">
+      <Element as="div" className="welcome-page__video-container">
+        <video autoPlay muted loop>
+          <source
+            src="/images/home/welcome-page/background.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
+        <Heading as="h1" className="welcome-page__heading">
+          <span className="welcome-page__heading-span">Godine su samo broj, nisu bitne</span> <br />
+          <span className="welcome-page__heading-span">osim ako ste kojim slucajem boca vina.</span>
+        </Heading>
+      </Element>
+    </Element>
   );
 };
 
