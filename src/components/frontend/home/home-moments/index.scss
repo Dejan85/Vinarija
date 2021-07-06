@@ -1,21 +1,39 @@
 @use "sass:math";
 
 .home-moments {
-  flex-direction: column;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-top: 10rem;
+  position: relative;
+
+  &__col:nth-child(1) {
+    position: relative;
+    top: 15rem;
+
+    p {
+      color: $main-color;
+      opacity: 80%;
+      font-size: 2.5rem;
+      line-height: 1.5;
+      text-align: left;
+      margin-top: 3rem;
+      font-family: $lato;
+    }
+  }
 
   &__heading {
     font-size: $poppins;
     font-size: 5rem;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     color: $main-color;
     text-shadow: none;
   }
 
   &__link {
-    color: rgb(78, 73, 73);
+    display: inline-flex;
+    color: $accent-color;
     font-family: $lato;
     font-size: 4rem;
     text-decoration: none;
@@ -23,7 +41,8 @@
     transition: all 0.3s ease-out;
 
     &:hover {
-      color: $main-color;
+      color: lighten($accent-color, 20%);
+      transform: translateX(1.5rem);
     }
   }
 
@@ -44,6 +63,7 @@
           img {
             $rotation: (math.div($i - 1, $photos - 1)) - 0.5;
             transform: scale(0.6) rotate($rotation * 30deg);
+            transition: all ease-out;
           }
         }
       }
@@ -52,6 +72,7 @@
         width: 110vmin;
         height: 110vmin;
         border-radius: 0.5rem;
+        object-fit: cover;
       }
     }
   }

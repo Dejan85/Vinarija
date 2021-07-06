@@ -1,50 +1,110 @@
 .footer {
-  display: flex;
-  justify-content: center;
+  margin-top: 10rem;
   width: 100%;
   background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  &__container {
+  &__news {
+    height: 40vh;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem 0;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-  &__links-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    max-width: 60rem;
-    width: 100%;
-  }
+    h1 {
+      font-size: 8rem;
+      font-weight: 500;
+      color: #fff;
+      font-family: $poppins;
+      font-style: italic;
+      position: relative;
+    }
 
-  &__social-links {
-    display: flex;
-    margin-right: -50rem;
-    .social-links {
-      a > img {
-        margin: 0 0.7rem;
+    form {
+      margin-top: 3rem;
+      align-items: flex-end;
+
+      input {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $accent-color;
+        background-color: transparent;
+        font-size: 3rem;
+        color: #fff;
+        font-family: $lato;
+        margin-right: 2rem;
+        width: 80rem;
+        height: 5rem;
+        position: relative;
+
+        &::placeholder {
+          color: #fff;
+          opacity: 80%;
+        }
+      }
+
+      input:nth-child(2) {
+        width: 40rem;
+      }
+
+      button {
+        outline: none;
+        border: 2px solid $accent-color;
+        padding: 1.5rem;
+        font-size: 3rem;
+        color: #fff;
+        background-color: transparent;
+        margin-left: 2rem;
       }
     }
   }
 
-  &__text {
-    color: white;
-    font-size: 1.7rem;
+  &__link {
+    display: inline-flex;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: $lato;
+    text-decoration: none;
+    transition: all .2s ease-out;
 
-    &--company-name {
-      font-size: $poppins;
-      font-size: 3rem;
-      font-weight: 500;
+    span {
+      transition: all .2s ease-out;
+    }
+
+    &:hover {
+      span {
+        margin-left: 1rem;
+      }
     }
   }
 
-  &__rights {
+  &__footer-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5rem 20rem;
+
+    img {
+      width: 15rem;
+    }
+  }
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     p {
-      color: white;
-      font-size: 1.2rem;
-      text-transform: uppercase;
+      color: #fff;
+      font-family: $lato;
+      margin: 0.5rem 0;
     }
   }
 }

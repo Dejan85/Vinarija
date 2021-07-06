@@ -70,7 +70,7 @@ const WineDetail = (props: WineDetailProps) => {
           </Paragraph>
 
           <Link className="wine-detail__content-right-link" href="/">
-            Gde kupiti?
+            Dodaj u korpu
           </Link>
           {detailImage2 && (
             <Image

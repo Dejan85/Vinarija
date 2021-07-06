@@ -23,13 +23,13 @@ const Contact = (): JSX.Element => {
         <form onSubmit={onSubmit}>
           <Element as="div" className="contact__form">
             <Input
-              placeholder="Ime i Prezime"
+              placeholder="Vaše ime..."
               label="ime"
               name="name"
               type="text"
             />
             <Input
-              placeholder="ime@email.com"
+              placeholder="Vaša email adresa..."
               label="email"
               name="email"
               type="email"

@@ -7,8 +7,14 @@
     flex-direction: column;
     align-items: flex-start;
 
+    h1 {
+      font-size: 5rem;
+      letter-spacing: 2px;
+    }
+
     p {
       margin-top: 1rem;
+      font-style: italic;
     }
   }
 
@@ -34,7 +40,6 @@
   }
 
   &__coupon-input {
-    width: 25rem;
     padding: 0.5rem 0;
   }
 
@@ -45,7 +50,7 @@
     padding-bottom: 0.5rem;
     border-bottom: 1px solid $main-color;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: $lato;
     margin-left: 2rem;
   }
@@ -58,22 +63,22 @@
 
   &__sum-price-container {
     display: flex;
-    width: 30rem;
+    width: 35rem;
     justify-content: space-between;
     padding-bottom: 1rem;
   }
 
   &__sum-price-text {
-    width: 15rem;
     font-family: $lato;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: right;
   }
 
   &__sum-price-price {
     font-family: $lato;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    font-style: italic;
   }
 
   &__sum-price-text-price-total {
@@ -92,7 +97,7 @@
     background: none;
     padding: 0.5rem 1rem;
     font-family: $lato;
-    font-size: 1.5rem;
-    width: 17rem;
+    font-size: 2rem;
+    outline: none;
   }
 }

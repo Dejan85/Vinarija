@@ -8,17 +8,17 @@ const NavProvider = ({ children }) => {
   const tl = new TimelineMax();
 
   const closeNav = (): void => {
-    tl.to(".navigation", { left: "-100%", ease: Power3.easeOut }, 0.1);
+    tl.to(".navigation", { left: "-100%", ease: Power3.easeOut, duration: .05 });
     setToggleNav(!toggleNav);
   };
 
   useEffect(() => {
     if (toggleNav) {
-      tl.to(".navigation", { left: "0%", ease: Power3.easeOut }, 0.1);
+      tl.to(".navigation", { left: "0%", ease: Power3.easeOut, duration: .05 });
       tl.staggerFrom(
         ".navigation__col__nav-links",
         0.5,
-        { x: -200, opacity: 0, ease: Power3.easeOut },
+        { x: -200, opacity: 0, ease: Back.easeOut },
         0.3
       );
       tl.staggerFrom(
@@ -28,7 +28,7 @@ const NavProvider = ({ children }) => {
         0.4
       );
     } else {
-      tl.to(".navigation", { left: "-100%", ease: Power3.easeOut }, 0.1);
+      tl.to(".navigation", { left: "-100%", ease: Power3.easeOut, duration: .05 });
     }
   }, [toggleNav]);
 

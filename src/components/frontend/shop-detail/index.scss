@@ -1,5 +1,8 @@
 .shop-detail {
-  padding: 10rem 0;
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
   &__image-container {
     position: relative;
@@ -15,16 +18,25 @@
 
   &__content-heading {
     font-size: 4rem;
+    padding: 1rem 0;
+    border-bottom: dotted 2px #363636;
   }
 
   &__content-price-container {
+    margin-top: 1.5rem;
     display: flex;
     width: 100%;
     margin-top: 2rem;
+    align-items: center;
   }
 
   &__content-price {
-    padding-top: 1.5rem;
+    font-size: 3rem;
+    margin-right: .5rem;
+  }
+
+  &__content-volume {
+    font-size: 2rem;
   }
 
   &__button-container {
@@ -106,9 +118,9 @@
   }
 
   &__content-wine-profile-text {
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2.2em;
   }
 
   &__content-wine-profile-span {
